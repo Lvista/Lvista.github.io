@@ -1,0 +1,862 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+
+<link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext' rel='stylesheet' type='text/css' /><style type='text/css'>html {overflow-x: initial !important;}:root { --bg-color:#ffffff; --text-color:#333333; --select-text-bg-color:#B5D6FC; --select-text-font-color:auto; --monospace:"Lucida Console",Consolas,"Courier",monospace; --title-bar-height:20px; }
+.mac-os-11 { --title-bar-height:28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; tab-size: 4; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p { position: relative; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex:2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+
+
+/* meyer reset -- http://meyerweb.com/eric/tools/css/reset/ , v2.0 | 20110126 | License: none (public domain) */
+
+@include-when-export url(https://fonts.googleapis.com/css?family=PT+Serif:400,400italic,700,700italic&subset=latin,cyrillic-ext,cyrillic,latin-ext);
+
+/* =========== */
+
+/* pt-serif-regular - latin */
+/* pt-serif-italic - latin */
+/* pt-serif-700 - latin */
+/* pt-serif-700italic - latin */
+:root {
+	--active-file-bg-color: #dadada;
+	--active-file-bg-color: rgba(32, 43, 51, 0.63);
+	--active-file-text-color: white;
+	--bg-color: #f3f2ee;
+	--text-color: #1f0909;
+	--control-text-color: #444;
+	--rawblock-edit-panel-bd: #e5e5e5;
+
+	--select-text-bg-color: rgba(32, 43, 51, 0.63);
+	--select-text-font-color: white;
+}
+
+pre {
+	--select-text-bg-color: #36284e;
+	--select-text-font-color: #fff;
+}
+
+html {
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+}
+
+html,
+body {
+	background-color: #f3f2ee;
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+	line-height: 1.5em;
+}
+
+/*#write {
+	overflow-x: auto;
+    max-width: initial;
+	padding-left: calc(50% - 17em);
+    padding-right: calc(50% - 17em);
+}
+
+@media (max-width: 36em) {
+ 	#write {
+ 		padding-left: 1em;
+    	padding-right: 1em;
+ 	}
+}*/
+
+#write {
+	max-width: 40em;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 914px;
+	}
+}
+
+ol li {
+	list-style-type: decimal;
+	list-style-position: outside;
+}
+
+ul li {
+	list-style-type: disc;
+	list-style-position: outside;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* styles */
+
+/* ====== */
+
+/* headings */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: bold;
+}
+
+h1 {
+	font-size: 1.875em;
+	/*30 / 16*/
+	line-height: 1.6em;
+	/* 48 / 30*/
+	margin-top: 2em;
+}
+
+h2,
+h3 {
+	font-size: 1.3125em;
+	/*21 / 16*/
+	line-height: 1.15;
+	/*24 / 21*/
+	margin-top: 2.285714em;
+	/*48 / 21*/
+	margin-bottom: 1.15em;
+	/*24 / 21*/
+}
+
+h3 {
+	font-weight: normal;
+}
+
+h4 {
+	font-size: 1.125em;
+	/*18 / 16*/
+	margin-top: 2.67em;
+	/*48 / 18*/
+}
+
+h5,
+h6 {
+	font-size: 1em;
+	/*16*/
+}
+
+h1 {
+	border-bottom: 1px solid;
+	margin-bottom: 1.875em;
+	padding-bottom: 0.8125em;
+}
+
+/* links */
+
+a {
+	text-decoration: none;
+	color: #065588;
+}
+
+a:hover,
+a:active {
+	text-decoration: underline;
+}
+
+/* block spacing */
+
+p,
+blockquote,
+.md-fences {
+	margin-bottom: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin-bottom: 1.5em;
+}
+
+/* blockquote */
+
+blockquote {
+	font-style: italic;
+	border-left: 5px solid;
+	margin-left: 2em;
+	padding-left: 1em;
+}
+
+/* lists */
+
+ul,
+ol {
+	margin: 0 0 1.5em 1.5em;
+}
+
+/* tables */
+.md-meta,
+.md-before,
+.md-after {
+	color: #999;
+}
+
+table {
+	margin-bottom: 1.5em;
+	/*24 / 16*/
+	font-size: 1em;
+	/* width: 100%; */
+}
+
+thead th,
+tfoot th {
+	padding: .25em .25em .25em .4em;
+	text-transform: uppercase;
+}
+
+th {
+	text-align: left;
+}
+
+td {
+	vertical-align: top;
+	padding: .25em .25em .25em .4em;
+}
+
+code,
+.md-fences {
+	background-color: #dadada;
+}
+
+code {
+	padding-left: 2px;
+	padding-right: 2px;
+}
+
+.md-fences {
+	margin-left: 2em;
+	margin-bottom: 3em;
+	padding-left: 1ch;
+	padding-right: 1ch;
+}
+
+pre,
+code,
+tt {
+	font-size: .875em;
+	line-height: 1.714285em;
+}
+
+/* some fixes */
+
+h1 {
+	line-height: 1.3em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+p+ul,
+p+ol {
+	margin-top: .5em;
+}
+
+h3+ul,
+h4+ul,
+h5+ul,
+h6+ul,
+h3+ol,
+h4+ol,
+h5+ol,
+h6+ol {
+	margin-top: .5em;
+}
+
+li>ul,
+li>ol {
+	margin-top: inherit;
+	margin-bottom: 0;
+}
+
+li ol>li {
+	list-style-type: lower-alpha;
+}
+
+li li ol>li {
+	list-style-type: lower-roman;
+}
+
+h2,
+h3 {
+	margin-bottom: .75em;
+}
+
+hr {
+	border-top: none;
+	border-right: none;
+	border-bottom: 1px solid;
+	border-left: none;
+}
+
+h1 {
+	border-color: #c5c5c5;
+}
+
+blockquote {
+	border-color: #bababa;
+	color: #656565;
+}
+
+blockquote ul,
+blockquote ol {
+	margin-left: 0;
+}
+
+.ty-table-edit {
+	background-color: transparent;
+}
+
+thead {
+	background-color: #dadada;
+}
+
+tr:nth-child(even) {
+	background: #e8e7e7;
+}
+
+hr {
+	border-color: #c5c5c5;
+}
+
+.task-list {
+	padding-left: 1rem;
+}
+
+.md-task-list-item {
+	padding-left: 1.5rem;
+	list-style-type: none;
+}
+
+.md-task-list-item>input:before {
+	content: '\221A';
+	display: inline-block;
+	width: 1.25rem;
+	height: 1.6rem;
+	vertical-align: middle;
+	text-align: center;
+	color: #ddd;
+	background-color: #F3F2EE;
+}
+
+.md-task-list-item>input:checked:before,
+.md-task-list-item>input[checked]:before {
+	color: inherit;
+}
+
+#write pre.md-meta-block {
+	min-height: 1.875rem;
+	color: #555;
+	border: 0px;
+	background: transparent;
+	margin-top: -4px;
+	margin-left: 1em;
+	margin-top: 1em;
+}
+
+.md-image>.md-meta {
+	color: #9B5146;
+}
+
+.md-image>.md-meta {
+	font-family: Menlo, 'Ubuntu Mono', Consolas, 'Courier New', 'Microsoft Yahei', 'Hiragino Sans GB', 'WenQuanYi Micro Hei', serif;
+}
+
+
+#write>h3.md-focus:before {
+	left: -1.5rem;
+	color: #999;
+	border-color: #999;
+}
+
+#write>h4.md-focus:before {
+	left: -1.5rem;
+	top: .25rem;
+	color: #999;
+	border-color: #999;
+}
+
+#write>h5.md-focus:before {
+	left: -1.5rem;
+	top: .0.3125rem;
+	color: #999;
+	border-color: #999;
+}
+
+#write>h6.md-focus:before {
+	left: -1.5rem;
+	top: 0.3125rem;
+	color: #999;
+	border-color: #999;
+}
+
+.md-toc:focus .md-toc-content {
+	margin-top: 19px;
+}
+
+.md-toc-content:empty:before {
+	color: #065588;
+}
+
+.md-toc-item {
+	color: #065588;
+}
+
+#write div.md-toc-tooltip {
+	background-color: #f3f2ee;
+}
+
+#typora-sidebar {
+	background-color: #f3f2ee;
+	-webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.375);
+}
+
+.pin-outline #typora-sidebar {
+	background: inherit;
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+.pin-outline #typora-sidebar:hover .outline-title-wrapper {
+	border-left: 1px dashed;
+}
+
+.outline-item:hover {
+	background-color: #dadada;
+	border-left: 28px solid #dadada;
+	border-right: 18px solid #dadada;
+}
+
+.typora-node .outline-item:hover {
+	border-right: 28px solid #dadada;
+}
+
+.outline-expander:before {
+	content: "\f0da";
+	font-family: FontAwesome;
+	font-size: 14px;
+	top: 1px;
+}
+
+.outline-expander:hover:before,
+.outline-item-open>.outline-item>.outline-expander:before {
+	content: "\f0d7";
+}
+
+.modal-content {
+	background-color: #f3f2ee;
+}
+
+.auto-suggest-container ul li {
+	list-style-type: none;
+}
+
+/** UI for electron */
+
+.megamenu-menu,
+#top-titlebar,
+#top-titlebar *,
+.megamenu-content {
+	background: #f3f2ee;
+	color: #1f0909;
+}
+
+.megamenu-menu-header {
+	border-bottom: 1px dashed #202B33;
+}
+
+.megamenu-menu {
+	box-shadow: none;
+	border-right: 1px dashed;
+}
+
+header,
+.context-menu,
+.megamenu-content,
+footer {
+	font-family: "PT Serif", 'Times New Roman', Times, serif;
+	color: #1f0909;
+}
+
+#megamenu-back-btn {
+	color: #1f0909;
+	border-color: #1f0909;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title:before {
+	color: #1f0909;
+}
+
+.megamenu-menu-list li a:hover,
+.megamenu-menu-list li a.active {
+	color: inherit;
+	background-color: #e8e7df;
+}
+
+.long-btn:hover {
+	background-color: #e8e7df;
+}
+
+#recent-file-panel tbody tr:nth-child(2n-1) {
+	background-color: transparent !important;
+}
+
+.megamenu-menu-panel tbody tr:hover td:nth-child(2) {
+	color: inherit;
+}
+
+.megamenu-menu-panel .btn {
+	background-color: #D2D1D1;
+}
+
+.btn-default {
+	background-color: transparent;
+}
+
+.typora-sourceview-on #toggle-sourceview-btn,
+.ty-show-word-count #footer-word-count {
+	background: #c7c5c5;
+}
+
+#typora-quick-open {
+	background-color: inherit;
+}
+
+.md-diagram-panel {
+	margin-top: 8px;
+}
+
+.file-list-item-file-name {
+	font-weight: initial;
+}
+
+.file-list-item-summary {
+	opacity: 1;
+}
+
+.file-list-item {
+	color: #777;
+}
+
+.file-list-item.active {
+	background-color: inherit;
+	color: black;
+}
+
+.ty-side-sort-btn.active {
+	background-color: inherit;
+}
+
+.file-list-item.active .file-list-item-file-name {
+	font-weight: bold;
+}
+
+.file-list-item {
+	opacity: 1 !important;
+}
+
+.file-library-node.active>.file-node-background {
+	background-color: rgba(32, 43, 51, 0.63);
+	background-color: var(--active-file-bg-color);
+}
+
+.file-tree-node.active>.file-node-content {
+	color: white;
+	color: var(--active-file-text-color);
+}
+
+.md-task-list-item>input {
+	margin-left: -1.7em;
+	margin-top: calc(1rem - 12px);
+	-webkit-appearance: button;
+}
+
+input {
+	border: 1px solid #aaa;
+}
+
+.megamenu-menu-header #megamenu-menu-header-title,
+.megamenu-menu-header:hover,
+.megamenu-menu-header:focus {
+	color: inherit;
+}
+
+.dropdown-menu .divider {
+	border-color: #e5e5e5;
+	opacity: 1;
+}
+
+/* https://github.com/typora/typora-issues/issues/2046 */
+.os-windows-7 strong,
+.os-windows-7 strong {
+	font-weight: 760;
+}
+
+.ty-preferences .btn-default {
+	background: transparent;
+}
+
+.ty-preferences .window-header {
+	border-bottom: 1px dashed #202B33;
+	box-shadow: none;
+}
+
+#sidebar-loading-template,
+#sidebar-loading-template.file-list-item {
+	color: #777;
+}
+
+.searchpanel-search-option-btn.active {
+	background: #777;
+	color: white;
+}
+
+.export-detail,
+.light .export-detail,
+.light .export-item.active,
+.light .export-items-list-control {
+	background: #e0e0e0;
+	border-radius: 2px;
+	font-weight: 700;
+	color: inherit
+}
+
+
+</style><title>622semi</title>
+</head>
+<body class='typora-export os-windows typora-export-show-outline typora-export-collapse-outline'><div class='typora-export-content'>
+<div class="typora-export-sidebar"><div class="outline-content"><li class="outline-item-wrapper outline-h1 outline-item-open"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#バーチャルグローバルランドマーク-空間ナビゲーション学習向上のためのar拡張現実技術">バーチャルグローバルランドマーク： 空間ナビゲーション学習向上のためのAR(拡張現実)技術</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h2 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#概要">概要</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#1-はじめに">1 はじめに</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#2-材料と方法">2 材料と方法</a></div><ul class="outline-children"><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#21-参加者">2.1 参加者</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#22-ar設定">2.2 AR設定</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#23-仮想世界ランドマーク">2.3 仮想世界ランドマーク</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#24-vglの開発">2.4 VGLの開発</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#25-実験シナリオ">2.5 実験シナリオ</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#26-アンケート">2.6 アンケート</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#27-統計">2.7 統計</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h3 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#28-仮説">2.8 仮説</a></div><ul class="outline-children"></ul></li></ul></li><li class="outline-item-wrapper outline-h2 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#3-結果と考察">3 結果と考察</a></div><ul class="outline-children"></ul></li><li class="outline-item-wrapper outline-h2 outline-item-single"><div class="outline-item"><span class="outline-expander"></span><a class="outline-label" href="#4-結論">4 結論</a></div><ul class="outline-children"></ul></li></ul></li></div></div><div id='write'  class=''><h1 id='バーチャルグローバルランドマーク-空間ナビゲーション学習向上のためのar拡張現実技術'><span>バーチャルグローバルランドマーク： 空間ナビゲーション学習向上のためのAR(拡張現実)技術</span></h1><h2 id='概要'><span>概要</span></h2><p><span>		</span><span>ナビゲーションは、複雑な認知機能を含む多面的な人間の能力です。これにより、よく知られた空間を効率的に移動できると同時に、道に迷うことなく未知の環境を積極的に探索できるようになります。しかし、ナビゲーション支援システムへの依存度が高まると、周囲環境の処理が低下し、空間知識の獲得、ひいては方向認識能力が低下します。 Google マップのような現在のナビゲーション支援システムによって引き起こされるこのようなスキルの損失を防ぐために、私たちは拡張現実 (AR) における新しいランドマーク技術である仮想グローバル ランドマーク (VGL) を提案します。この技術は、ナビゲーションを支援し、空間学習を促進することを目的としています。私たちは 5 人の参加者を対象にパイロットスタディを実施し、方向矢印と VGL を比較しました。私たちの結果は、参加者は、精神的負荷を大幅に増加させることなく、方向矢印よりも VGL を使用したナビゲーション中に環境についてより多くのことを学習したことを示唆しています。この結果は、当社のナビゲーション システムの将来に大きな影響を与えます。</span></p><h2 id='1-はじめに'><span>1 はじめに</span></h2><p><span>		</span><span>空間ナビゲーションは、空間情報を使用して未知の環境を探索し、目的地までのルートを決定するプロセスです。空間ナビゲーションと方向指示の能力は、すべての生物にとって重要であることがよく認識されています [1]。人間によるナビゲーションのサポートについては、Google マップ ¹、Bing マップ ²、Apple マップ ¹ などの一般的なナビゲーション支援システムが、日常のナビゲーションにおける効率的な自動方向指示によって私たちに恩恵をもたらしていることに疑いの余地はありません。しかし、これらのナビゲーション サポートの使用量が増えると、周囲環境の処理が減少し、空間知識の獲得が低下する可能性があります。したがって、これらのシステムの使用は、ユーザーのナビゲーション能力の喪失につながります [4、11、16、17]。このような影響を克服するには、ユーザーが空間認識能力を高めるために周囲を認識できるように、オリエンテーション中に環境に関するより多くの手がかりが必要です。方向感覚とナビゲーションスキルの向上は、メンタルマップの数が増加するため、神経接続に直接影響します[10、13]。さらに、以前の研究 [2、6、15] では、ランドマークがナビゲーションと空間学習にプラスの効果をもたらす重要な環境の合図であることが示されています。</span></p><p><span>		</span><span>より優れたナビゲーション能力の利点を考慮すると、空間学習を改善するためのさまざまな技術がかなりの研究で発見されています。 2004 年に、Richter と Klippel [19] は、ル</span>
+<span>ート指示の概念化と精神的処理を軽減するために、ルー</span>
+<span>トの環境に基づいてルート指示を適応させるアプローチを</span>
+<span>発表しました。その後、シュミットら。 [20] は、Richter らと同様のルート認識マップを生成する技術を開発しました。周囲の環境をよりよく理解するのに役立ちます。最近、Li ら [12]は、方向感覚が鈍い人々が空間方向を認識できるようにす</span>
+<span>る、空間方向のサポートのために遠くのランドマークを視</span>
+<span>覚化するモバイル マップ ディスプレイを提案しました。</span></p><p><span>		</span><span>ただし、これらのテクニックは学習には役立ちますが、2 次元画面でのプレゼンテーションのため、特定の基準フレームの傾向を持つ人にのみ役立ちます [7] 。 最近の研究では、仮想現実 (VR) 環境内での空間学習を強化するランドマーク キューの利点について、さらに豊富な証拠が示されています [3、5、14、23]。 これらの作品は、ポータブルで強力でウェアラブルな拡張現実 (AR) 技術 [21] の最近の重要な開発の助けを借りて、方向性サポートの新しいパラダイムを開きます。 AR テクノロジーを使用すると、ユーザーはデジタル情報を使用して普及したコンピューティング環境と自然に対話できるようになります [18]。</span></p><p><span>		</span><span>現在の AR テクノロジーでは、現実世界に矢印やパスなどのナビゲーション アイコンを配置するために使用できるデジタル情報を表示できます。このシームレスな統合により、混乱や不快感を引き起こすことなく、ユーザーの方向性と空間ナビゲーション能力を向上させることができます。これは、空間知識の獲得と神経処理の新しい方法につながる可能性があります。ただし、現在の AR ベースのナビゲーションは、ユーザーに見えるランドマークのオーバーレイのみに焦点を当てています。このオーバーレイは、ユーザーの注意を引くことを目的としており、ナビゲーションを支援することを目的としたものではありません。</span></p><p><span>		</span><span>地球規模のランドマークを参照として使用することは、未知のエリアをナビゲートするためのよく知られた方法です。たとえば、オーストラリアのシドニーにあるシドニー オペラ ハウスを参考にしてナビゲーションの道順を誰かに教えることは、地元の他のランドマークに関して同じナビゲーションの道順を説明するよりも役立ちます。空間ナビゲーション能力における地球規模のランドマークのこのプラスの効果を動機として、我々は、AR ベースのナビゲーション システム用の新しいランドマーク表示スキーマである仮想地球ランドマーク (VGL) を提案します。私たちの貢献は次のとおりです。</span></p><ol start='' ><li><p><span>新しい仮想地球ランドマーク (VGL) 技術により、たとえ周囲の障害物であっても地球規模のランドマークを見ることができます。この可視性の更新により、ユーザーは自然なナビゲーション スキルへ</span>
+<span>の干渉を最小限に抑えながら、VGL を基準点として使用できるようになります。</span></p></li><li><p><span>VGL はユーザーの空間学習の改善に貢献でき、これは記憶喪失などの長期的な神経学的問題を防ぐために不可欠であることが示されています [13]。</span></p></li><li><p><span>VGL をナビゲーション技術として使用した AR ベースのナビゲーション システムのプロトタイプ。</span></p></li></ol><h2 id='2-材料と方法'><span>2 材料と方法</span></h2><h3 id='21-参加者'><span>2.1 参加者</span></h3><p><span>		</span><span>実験は5人の参加者に対して行われ、全員が男性でした。参加者の平均年齢は29歳で、範囲は26～33歳でした。研究に参加する前に、各参加者には実験手順の十分な説明が与えられ、インフォームドコンセントが得られました。倫理の承認は、オーストラリアのシドニー工科大学の人間研究倫理委員会によって発行されました。実験は現実世界の環境で行われました。参加者の中には実験結果に影響を与えた可能性のある精神疾患の既往歴がなかった。</span></p><h3 id='22-ar設定'><span>2.2 AR設定</span></h3><p><span>		</span><span>AR アプリケーションは、HoloLens 1 (Microsoft Corp. 米国) デバイス上で実行されるように構築されました。 このデバイスの視野は 30X17.5° です。 参加者の頭の方向は、HoloLens 内の内蔵慣性測定ユニット (IMU) と環境理解カメラを使用して計算されました。 AR アプリケーションは Unity 3D ゲーム エンジンを使用して構築されました.</span></p><p><span>		</span><span>HoloLens システムには全地球測位システム (GPS) がないため、ユーザーの位置情報を提供するために携帯電話が使用されました。この目的には、Android オペレーティング システムを実行する携帯電話 (Samsung Galaxy A31) が使用されました。携帯電話のGPS 位置が変化するたびにユーザーの位置を AR システムに報告するカスタム アプリを開発しました。これを実現するために、Location5の更新が Google Firebase 5 データベースに送信され、その情報が HoloLens デバイスに送信されました。</span></p><h3 id='23-仮想世界ランドマーク'><span>2.3 仮想世界ランドマーク</span></h3><p><span>		</span><span>VGL は、世界のランドマークを仮想的に表現するための方向補助です。この実験では、シドニーのオペラハウスとシドニー工科大学の主要タワービルが世界的なランドマークとして使用されました。オペラハウスとタワービルの仮想オーバーレイ画像は、実際の視野角と位置で表示されました。実際のランドマークが見えない場合、VGL が参加者に見えるようになります。これは、提示された作品内の距離に基づいて決定されます。図 1 を参照してください。</span></p><p><img src="./assets/p1.png" referrerpolicy="no-referrer">
+<strong><span>図 1: VGL の説明: (1) 実際のグローバル ランドマーク、(2) 別のランドマークが最初のランドマークを隠している、(3) 視界内にある最初のランドマークの VGL 表現ランドマークの方向。</span></strong></p><h3 id='24-vglの開発'><span>2.4 VGLの開発</span></h3><p><span>		</span><span>参加者に VGL を表示するために、参加者と各実際のランドマークの間の方向ベクトル vgl が計算されました。すべての地理計算には地理位置情報 API Mapbox 6 が使用されました。 VGL を参加者から VGL の方向に1 メートルの距離に配置しました。 VGL は常に参加者の視界の高さに設置されました。</span></p><p><span>		</span><span>VGL は、参加者に実際のランドマークの方向に配置された浮遊ホログラムを見ているような感覚を与えることを目的としています。 そのため、各 VGL では、各建物の輪郭を示す単純な 2D 図面が使用されました。 参加者の注意を引くために赤く着色され、ホログラムのような雰囲気を与えるために 80% の透明度が設定されました。 VGL は 2D 描画であるため、VGL の前方ベクトルが常に参加者の方を向くようにしました。 そうすることで、どの角度から見ても VGL が常に見えるようになりました。</span></p><h3 id='25-実験シナリオ'><span>2.5 実験シナリオ</span></h3><p><span>		</span><span>この実験は、図 2 に示す 4 つの事前定義されたナビゲーション トライアルで構成されます。各トライアルは、出発点と目的地 (図 2 で A および B とマーク) で構成されます。トライアルを正常に完了するには、各参加者は出発点 A から目的地 B まで移動する必要があります。参加者は HoloLensデバイスの助けを借りて移動し、実験者は中断されることなく 0.5 メートル以内の距離を後ろから歩きました。参加者が目的地から 10 メートル以内に近づくと、HoloLensシステムは「目的地に到達しました」というメッセージを表示します。このメッセージは裁判の終了を告げるものでした。この後、実験者は参加者を新しい実験の次の開始点に連れて行きました。参加者には、通常の航行状況と同様に、歩行中に交通や人を避けて自然に歩くように指示されました。</span></p><p><img src="./assets/p2.png" referrerpolicy="no-referrer">
+<strong><span>図 2: 各参加者の各トライアルで使用されるナビゲーション ルート。ここに示されている地図は、オーストラリア、ニューサウスウェールズ州シドニーのグリーブとウルティモの郊外を示しています。ルートの始点は A、目的地は B で表されます。</span></strong></p><p><img src="./assets/p3.png" referrerpolicy="no-referrer">
+<strong><span>図 3: 実験デザイン: (左) 実験は、中央に地図を備えたナビゲーション用の VGL で構成されています。 (右) トライアルは、中央に地図を備えたナビゲーション用の方向矢印で構成されています。この図は、VGL と方向矢印の違いを説明するための説明のみを目的としています。</span></strong></p><p><span>		</span><span>アウト ナビゲーション システムには、方向矢印と VGL という 2 つのナビゲーション補助機能が含まれています。各トライアルで、参加者はそれらのうちの 1 つだけを使用してナビゲーションしました。方法論はランダムに割り当てられ、「方向矢印」の 2 つのトライアルと「VGL」の 2 つのトライアルになりました。これらのテクニックに加えて、ユーザーには常に、出発点、目的地、たどるべき推奨ルート、およびユーザーの現在位置を示す地図が表示されました。図 3 は、ユーザーの視点から見た AR 画面のセットアップを示しています。すべての参加者は、必要に応じてこの地図を参考として使用するように指示されました。ナビゲーションを試行するたびに、ユーザーは約 350 メートルの距離を歩きました。各試行には平均して約 7 分かかりました。</span></p><h3 id='26-アンケート'><span>2.6 アンケート</span></h3><p><span>		</span><span>ナビゲーションのトライアルを開始する前に、各参加者に 2 つの 7 点リッカート尺度ベースのアンケートに回答するよう依頼しました。最初のアンケートは NASA-TLX [8] 作業負荷アンケートでした。このアンケートには、実験を開始する前に参加者の精神的作業負荷のレベルを理解するための 7 つの質問が含まれています 。 NASA-TLX アンケートの後には、サンタバーバラ方向感覚 (SBSOD) スケール [9] に基づく 7 ポイントのリッカート スケールが続きます。これには、参加者のナビゲーション スキルを理解するための 15 の質問が含まれています。 SBSOD を収集しましたが、さらなる分析には使用しなかったことに注意してください。</span></p><p><span>		</span><span>NASA-TLX は各試験の最後にも質問されました。私たちは、さまざまなナビゲーション補助 (方向矢印または VGL) によって参加者の作業負荷レベルが変化したかどうかを理解したいと考えました。また、各実験の間に、各参加者に全体のナビゲーション ルートを描くように依頼しました。私たちは彼らに、店舗、奇妙な家、ユニークな木など、重要だと考えるランドマークを指定するよう依頼しました。実験の最後に、参加者に「方向矢印」と「VGL」のどちらを好むかについてのアンケートに答えてもらいました。すべてのナビゲーション試行、アンケート、地図描画を含めて、実験を完了するには全体的に約 1 時間かかりました。</span></p><h3 id='27-統計'><span>2.7 統計</span></h3><p><span>		</span><span>NASA-TLX の序数尺度、地図描画、好みのアンケートのため、ノンパラメトリック Wilcoxon 符号付き順位検定[22] を 10% の有意水準で使用してデータを分析しました。この研究ではサンプルサイズが非常に小さいため、10% の有意水準を適用しました。</span></p><h3 id='28-仮説'><span>2.8 仮説</span></h3><p><span>この実験を実施する目的は、従来のナビゲーション手段 (方向矢印) と比較して VGL の有効性を評価することです。私たちは、VGL が方向矢印と比較して、ユーザーの空間学習と環境に対する認識を向上させることができると信じています。そこで、次のような仮説を立てました。</span></p><ul><li><p><span>H1: ユーザーは、VGL を使用するために方向矢印よりも高い認知努力を必要とする場合があります。したがって、VGL トライアルでは、方向矢印トライアルよりも高い精神的負荷がかかります。</span></p></li><li><p><span>H2: 参加者は、方向矢印と比較して、VGL を使用したナビゲーション中に空間認識が向上します。</span></p></li></ul><p><img src="./assets/p4.png" referrerpolicy="no-referrer">
+<strong><span>図 4: NASA-TLX、地図描画、および「方向矢印」または「VGL」に対する参加者の好みからのアンケート結果: A) 試験前、VGL、および方向矢印の精神的作業負荷を表す全体的な NASA-TLX スコア矢印の状態。 B) 独立したコンポーネントは、試行前、VGL、方向矢印条件に NASA-TLX を使用して全体的な精神的作業負荷に貢献しました。 C) 正しい曲がり角の数と正しく識別されたランドマークの数を描いた地図に基づく、VGL および方向矢印トライアルの合計スコア。D) 効率性/使いやすさ、およびナビゲーション環境についての学習に対する有効性に基づく VGL および方向矢印に対する参加者の好み (</span><em><span>: p &lt; .10、: p &lt; .05</span></em><span>:p &lt; .01) 。</span></strong></p><h2 id='3-結果と考察'><span>3 結果と考察</span></h2><p><span>		</span><span>NASA-TLX、地図描画、および個人的な好みからの結果を図 4 に示します。ナビゲーション中の精神的負荷: 図 4 (A) に示すように、全体的な精神的負荷は VGL トライアルと方向矢印トライアルの両方でわずかに増加しました。しかし、VGL 試験では、方向性矢印試験と比較して、精神的作業負荷は低いものの、統計的に有意ではありませんでした (p &gt;0.05)。これは、方向矢印を使用するときにユーザーに必要な 2 つのアクションが原因である可能性があります。まず、方向矢印の位置を特定する必要があります。次に、矢印がどこを指しているのかを識別する必要があります。 VGL トライアルの場合、参加者は VGL の位置と比較して目的地の方向を確認するだけで済みました。したがって、精神的な作業負荷は方向矢印よりも低いことがわかりました。</span></p><p><span>		</span><span>方向矢印に対する精神的作業負荷は、実験前および試験アンケートと比較して有意に高いことが判明した (p&lt;0.05)。私たちは、参加者全員が HoloLens デバイスの使用経験がなかったため、このようなことが起こったと考えています。私たちは、デバイスに慣れることで、すべての参加者に追加の精神的負荷が生じたと考えています。 VGL と方向矢印の間のこれらの結果は、方向矢印と比較して VGL が環境を処理して方向を見つけるためにより高い認知作業負荷を必要とする可能性があるという仮説 H1 を支持しません。各参加者の詳細なスコアは補足表 1 に示されています。</span></p><p><span>		</span><span>図 4 (B) は、精神的作業負荷に寄与する個々のコンポーネントを示しています。 VGL 試験と比較して、方向矢印試験では参加者がより高い精神的要求、パフォーマンス、努力を要求したことがわかります (p&gt;0.05)。しかし、方向矢印トライアルは、トライアル前の条件と比較して、統計的に有意に高い精神的要求(p&lt;0.10)、パフォーマンス (p&lt;0.10)、および努力 (p&lt;0.05) の要求を誘発します。 VGL はまた、より高い精神的要求、パフォーマンス、努力を誘発しましたが、これらの要素は統計的に有意ではありませんでした (p&gt;0.10)。興味深いことに、試行前の時間的要求は VGL および方向矢印試行よりも高かったが、結果は統計的に有意ではなかった (p&gt;0.10)。差が有意ではなかった理由の 1 つは、参加者が試験を完了するため、または時間通りに特定の場所に到着するための時間的プレッシャーがなかったことである可能性があります。</span></p><p><span>		</span><span>我々の結果は、VGL トライアルでは、トライアル前 (p&gt;0.10) や方向矢印条件 (p&gt;0.10) と比較して、より多くの身体的要求 (p&gt;0.10)が必要となり、より高いレベルのフラストレーションを引き起こしたことを示しています。同様に、方向矢印のトライアルでは、身体的要求とフラストレーションのレベルが著しく高い (p&lt;0.10) ことがわかりました。タスクの要求自体が目的地を見つけるのに多大な肉体的労力を必要とするため、これは明らかであることがわかりました。場合によっては、このタスクでは正しい位置を正しく判断できず、参加者に不満が生じました。興味深いことに、物理的な要求とフラストレーションは、方向矢印と比較して VGL の方が高かったです。考えられる理由の 1 つは、VGL に関して再配置し、その後目的地を見つけるために物理的な労力がさらに必要になることです。繰り返しになりますが、これらの結果は仮説 H1 を部分的に支持しておらず、方向矢印よりも VGL の認知作業負荷が高いことを示唆しています。また、各参加者の満点については補足表 2 を参照してください。</span></p><p><span>		</span><span>空間学習: 私たちの結果は、精神的ワークロードの結果に続く VGL と方向矢印条件の間の空間認識に関する仮説 H2 を裏付けています。 図４（Ｃ）に示すように、ＶＧＬトライアルでは、方向性矢印トライアルと比較して、参加者が有意にｐ＜０．０５）多くのランドマークを記憶することができたことは明らかである。 これらの結果は私たちの仮説 H2 を直接裏付けており、方向矢印などの従来のナビゲーション手段と比較して、VGL 支援ナビゲーションが参加者に空間認識を促すことを示唆しています。 矢印などの従来のナビゲーション支援補助具は、目的地を正確に見つけるのに役立ちました。 しかし、ユーザーは周囲の環境からの情報を処理することを思いとどまりました。</span></p><p><span>		</span><span>興味深いことに、VGL トライアルと方向矢印トライアルの両方で、参加者が思い出したターン数はほぼ同様 (p&gt;0.10) でした。明らかな理由の 1 つは、ほとんどの場合 2 つの曲がり角で構成されるルートの長さです。したがって、ほぼすべての参加者が、トライアル終了時の地図描画タスク中にそれらを正しく描くことができました。ターンの合計数とランドマークの数は、補足表 3 に示されています。</span></p><p><span>		</span><span>学習と使いやすさに関する好み: NASA-TLX と地図描画を使用して VGL と方向矢印の長所と短所を評価した後、参加者に VGL と方向矢印の好みを評価するよう依頼しました。ユーザーは、効率性/使いやすさ、および空間認識能力の 2 段階評価でテクニックを評価しました。図 4 (D) に示すように、効率/使いやすさの観点から、参加者は常に VGL よりも方向矢印を好みます (p&gt;0.10)。補足表 4 も参照してください。ユーザーは、方向矢印がわかりやすく、目的地に到達するときに役立つと感じています。一方、ユーザーは、VGL には追加の労力が必要であることに気づきました。そのため、参加者は VGL よりも方向矢印を好みました。しかし、空間学習の問題に関しては、参加者は VGL を選択し、これも仮説 H2 と一致しました。VGL は確かに空間学習に役立ち、それは地図描画の結果からも裏付けられています。参加者の評価は補足表 4 に示されています。</span></p><p><span>この研究では、VGL がナビゲーション能力の向上に役立つことが示されましたが、この研究には次のようないくつかの制限があることがわかりました。</span></p><ol start='' ><li><p><span>現在の研究の参加者の数はわずか 5 人であり、私たちの主張を確固たるものにするのに十分な統計的検出力を得るには少なすぎます。将来的には、より良い結論を裏付ける十分な力を得るために、多数の参加者を対象にこの研究を拡張する予定です。</span></p></li><li><p><span>屋外で動作するように設計されていない HoloLens バージョン 1 を使用しました。したがって、地図、方向矢印、および VGL を視覚化するときに重大な問題が見つかりました。そのため、HoloLensでの視認性を高めるために、すべての実験を曇りの日に行う必要がありました。将来的には、このような問題を回避するために、HoloLens からより優れた AR ナビゲーション デバイスに移行したいと考えています。</span></p></li><li><p><span>また、歩行中の地図、矢印、VGL のジッタリングなど、視覚化に関する他の問題にも直面しました。これは参加者にとってイライラすることもありました。将来的には、Hololens 2 と同様の視線追跡テクノロジーを使用して、このような問題を確実に回避する予定です。</span></p></li><li><p><span>発表された作品は参加者の主観的な評価に大きく依存しており、事実情報を誤って伝える可能性があります。将来的には、脳波（EEG）、心拍数変動（HRV）、瞳孔サイズなどの生理学的測定値を、精神的負荷と学習能力の測定値として使用して、VGLと方向矢印のパフォーマンスを評価および評価する予定です。客観的に。</span></p></li></ol><h2 id='4-結論'><span>4 結論</span></h2><p><span>		</span><span>この研究により、VGL として知られる世界的なランドマークを表現する独自の AR 技術が開発され、空間学習の改善が見られました。私たちは、従来の方向矢印ベースのナビゲーション補助装置と新しい VGL 技術を比較する実世界の研究を設計しました。そのために、参加者は方向矢印または VGL を使用して4 つの事前定義されたルートをナビゲートするように求められ、次に NASA-TLX に答え、ナビゲートされたルート マップを描画し、使いやすい学習設定を行うように求められました。結果は、方向矢印と比較して、VGL は空間学習を促進しながら、参加者に精神的負荷をあまり与えないことを示しています。</span></p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p></div></div>
+
+<script>(function(){function e(e,n,i){document.addEventListener(e,function(e){if(!e.defaultPrevented)for(var t=e.target;t&&t!=this;t=t.parentNode)if(t.matches(n)){!1===i.call(t,e)&&(e.preventDefault(),e.stopPropagation());break}},!1)}var t=document.body.parentElement,i=[],r=null,o=document.body.classList.contains("typora-export-collapse-outline");function a(){return t.scrollTop}e("click",".outline-expander",function(e){var t=this.closest(".outline-item-wrapper").classList;return t.contains("outline-item-open")?t.remove("outline-item-open"):t.add("outline-item-open"),u(),!1}),e("click",".outline-item",function(e){var t=this.querySelector(".outline-label");location.hash="#"+t.getAttribute("href"),o&&((t=this.closest(".outline-item-wrapper").classList).contains("outline-item-open")||t.add("outline-item-open"),d(),t.add("outline-item-active"))});function s(){var e=a();r=null;for(var t=0;t<i.length&&i[t][1]-e<60;t++)r=i[t]}function n(){c=setTimeout(function(){var n;i=[],n=a(),document.querySelector("#write").querySelectorAll("h1, h2, h3, h4, h5, h6").forEach(e=>{var t=e.getAttribute("id");i.push([t,n+e.getBoundingClientRect().y])}),s(),u()},300)}var l,c,d=function(){document.querySelectorAll(".outline-item-active").forEach(e=>e.classList.remove("outline-item-active")),document.querySelectorAll(".outline-item-single.outline-item-open").forEach(e=>e.classList.remove("outline-item-open"))},u=function(){if(r&&(d(),t=document.querySelector('.outline-label[href="#'+(CSS.escape?CSS.escape(r[0]):r[0])+'"]')))if(o){var e=t.closest(".outline-item-open>ul>.outline-item-wrapper");if(e)e.classList.add("outline-item-active");else{for(var t,n=(t=t.closest(".outline-item-wrapper")).parentElement.closest(".outline-item-wrapper");n;)n=(t=n).parentElement.closest(".outline-item-wrapper");t.classList.add("outline-item-active")}}else t.closest(".outline-item-wrapper").classList.add("outline-item-active")};window.addEventListener("scroll",function(e){l&&clearTimeout(l),l=setTimeout(function(){s(),u()},300)});window.addEventListener("resize",function(e){c&&clearTimeout(c),n()}),n()})();</script></body>
+</html>
