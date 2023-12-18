@@ -5,4 +5,4 @@
 [6.22md](https://lvista.github.io/6.22semi/622semi.md)
 
 
-![图片](https://lvista.github.io/image.png)
+![图片](https://lvista.github.io/2023_12_18.png)
