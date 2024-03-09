@@ -12,7 +12,7 @@
 
     <title>
         
-        post title - Lvistaの日常(●&#39;◡&#39;●)
+        基于Python的视频处理 - Lvistaの日常(●&#39;◡&#39;●)
         
     </title>
 
@@ -111,7 +111,7 @@
     </div>
     
         <div id="toc" class="toc-article">
-    
+    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%9F%BA%E4%BA%8EPython%E7%9A%84%E8%A7%86%E9%A2%91%E5%A4%84%E7%90%86"><span class="toc-text">基于Python的视频处理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Start"><span class="toc-text">Start</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#MP4%E8%BD%ACGIF"><span class="toc-text">MP4转GIF</span></a></li></ol>
 </div>
     
 </div>
@@ -143,15 +143,18 @@
 
 <div class="post-container">
     <div class="post-title">
-        post title
+        基于Python的视频处理
     </div>
 
     <div class="post-meta">
-        <span class="attr">发布于：<span>2024-03-09 13:04:46</span></span>
+        <span class="attr">发布于：<span>2024-03-09 16:32:00</span></span>
         
         <span class="attr">标签：/
         
-        <a class="tag" href="/tags/#test1, test2" title="test1, test2">test1, test2</a>
+        <a class="tag" href="/tags/#python" title="python">python</a>
+        <span>/</span>
+        
+        <a class="tag" href="/tags/#image processing" title="image processing">image processing</a>
         <span>/</span>
         
         
@@ -161,7 +164,17 @@
 </span>
     </div>
     <div class="post-content no-indent">
-        
+        <h1 id="基于Python的视频处理"><a href="#基于Python的视频处理" class="headerlink" title="基于Python的视频处理"></a>基于Python的视频处理</h1><h1 id="Start"><a href="#Start" class="headerlink" title="Start"></a>Start</h1><p>一开始我是为了做一个GIF图，然后进行一个压的缩，缩到8M以下，以便发到B站动态。但是网上的在线压缩工具都不太好用，于是想到了Python，一查果然有这样的媒体处理模块：<code>moviepy</code></p>
+<p><a target="_blank" rel="noopener" href="https://cloud.tencent.com/developer/article/1975307">一日一技：使用Python将视频转Gif-腾讯云开发者社区-腾讯云</a></p>
+<p><a target="_blank" rel="noopener" href="https://zulko.github.io/moviepy/">User Guide — MoviePy 1.0.2 documentation</a></p>
+<h1 id="MP4转GIF"><a href="#MP4转GIF" class="headerlink" title="MP4转GIF"></a>MP4转GIF</h1><p>首先用Win11自带的视频剪辑软件剪了一下，然后导入<code>moviepy</code> ，按照教程给的代码进行测试：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">from</span> moviepy.editor <span class="keyword">import</span> *</span><br><span class="line"></span><br><span class="line">clip = VideoFileClip(<span class="string">r&quot;C:\Users\czc_c\Downloads\Liar Dancer.mp4&quot;</span>)</span><br><span class="line">clip = clip.resize(<span class="number">0.4</span>) <span class="comment"># 压缩大小</span></span><br><span class="line">clip.write_gif(<span class="string">&quot;movie-10f.gif&quot;</span>,fps=<span class="number">15</span>)  <span class="comment">#设置为每秒15帧</span></span><br></pre></td></tr></table></figure>
+
+<p>这时候会出现一个error：**<code>module &#39;PIL.Image&#39; has no attribute &#39;ANTIALIAS&#39;</code>**</p>
+<p>查了之后发现是Pillow 从10.0版本后就移除了**<code>ANTIALIAS</code>** ，解决方案就是导入9.5版本。</p>
+<p><a target="_blank" rel="noopener" href="https://stackoverflow.com/questions/76616042/attributeerror-module-pil-image-has-no-attribute-antialias">AttributeError: module ‘PIL.Image’ has no attribute ‘ANTIALIAS’</a></p>
+<p><img src="/../images/5M.gif" alt="5M.gif"></p>
+
         
         <br />
         <div id="comment-container">
