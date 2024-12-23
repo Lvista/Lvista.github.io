@@ -2,3 +2,4 @@ site_name: 黯然's Blog
 site_url: https://lvista.vercel.app/
 theme:
   name: material
+  custom_dir: overrides
