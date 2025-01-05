@@ -1,16 +1,78 @@
 site_name: 黯然's Blog
 site_url: https://lvista.vercel.app/
 theme:
+  language: zh
   name: material
-  logo: assets/images/logo.png
-  favicon: assets/images/logo.png
+  logo: assets/images/logo_noBG.png
+  favicon: assets/images/logo_noBG.png
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+  font:
+    text: Ubuntu
+    code: JetBrains Mono
   # custom_dir: overrides
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to light mode
+
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.top
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.indexes
+    - toc.follow
+    - search.share
+
+plugins:
+  - blog
+  - search
 
 nav:
   - Home: index.md
   - About: about.md
+  - Section:
+      - section/index.md
+      - Page 1: section/page-1.md
+      - Page 2: section/page-2.md
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
+  analytics:
+    provider: google
+    property: G-TMSQ1TZLPL
+  alternate:
+    - name: English
+      link: /en/
+      lang: en
+    - name: 中文
+      link: /
+      lang: zh
   consent:
     title: Cookie consent
     description: >-
@@ -21,3 +83,10 @@ extra:
 
 copyright: >
   <p xmlns:cc="http://creativecommons.org/ns#" >&copy; By Zhichao Cheng is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+      title: On this page
+      permalink_title: Anchor link to this section for reference
