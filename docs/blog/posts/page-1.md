@@ -1,14 +1,18 @@
 ---
+draft: true 
+slug: Vedio_processing_by_python
 title: "基于Python的视频处理"
 date: 2025-01-06
-# author: "Your Name"  # 可选
-categories: ["Python", "application", "media process"]  # 可选
-tags: ["Python", "media process","Vedio convert"]  # 可选
+categories: 
+    - Python
+    - application
+    - media process
+tags:
+    - Python
+    - Vedio
 ---
 
 # 基于Python的视频处理
-
-# Start
 
 一开始我是为了做一个GIF图，然后进行一个压的缩，缩到8M以下，以便发到B站动态。但是网上的在线压缩工具都不太好用，于是想到了Python，一查果然有这样的媒体处理模块：`moviepy`
 
