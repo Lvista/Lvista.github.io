@@ -48,16 +48,21 @@ theme:
     - search.share
 
 plugins:
-  - blog
+  - blog:
+      blog_toc: true
+      post_date_format: medium
+      post_excerpt: required
+      draft: true
   - search
 
 nav:
   - Home: index.md
   - About: about.md
-  - Section:
-      - section/index.md
-      - Page 1: section/page-1.md
-      - Page 2: section/page-2.md
+  - Anime: anime_ngnl.md
+  - Blog:
+      - blog/index.md
+      - Page1: blog/posts/page-1.md
+      # - Page1: blog/posts/page-2.md
 
 extra_css:
   - stylesheets/extra.css
