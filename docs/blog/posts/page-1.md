@@ -1,5 +1,5 @@
 ---
-# draft: true
+draft: true
 comments: true
 slug: Vedio_processing_by_python
 title: "基于Python的视频处理"
