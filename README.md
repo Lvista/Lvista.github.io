@@ -1,6 +1,6 @@
 # Lvista's Blog
 
-access [here](https://lvista.vercel.app/)
+access [here](https://lvista.site/)
 
 ## about
 
