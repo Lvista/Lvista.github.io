@@ -1,13 +1,23 @@
 site_name: 黯然's Blog
 site_url: https://lvista.vercel.app/
+repo_url: https://github.com/Lvista/Lvista.github.io
+repo_name: Lvista.github.io
+edit_uri: edit/main/docs/
 theme:
   language: zh
   name: material
+  custom_dir: overrides
   logo: assets/images/logo_noBG.png
   favicon: assets/images/logo_noBG.png
   icon:
+    repo: fontawesome/brands/github
     previous: fontawesome/solid/angle-left
     next: fontawesome/solid/angle-right
+    tag:
+      py: fontawesome/brands/python
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css: fontawesome/brands/css3
   font:
     text: Ubuntu
     code: JetBrains Mono
@@ -40,24 +50,39 @@ theme:
     - navigation.instant.progress
     - navigation.tracking
     - navigation.top
+    - navigation.footer
     # - navigation.sections
     # - navigation.tabs
     # - navigation.tabs.sticky
     - navigation.indexes
     - toc.follow
     - search.share
+    - header.autohide
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.copy
+    - content.code.annotate
 
 plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      fallback_to_build_date: true
   - blog:
       blog_toc: true
       post_date_format: medium
       post_excerpt: required
       draft: true
-  - search
+  - tags:
+      tags_file: tags.md
 
 nav:
   - Home: index.md
   - About: about.md
+  - Dict: Doc_skill.md
+  - Test: test.md
+  - Template: template.md
   - Anime: anime_ngnl.md
   - Blog:
       - blog/index.md
@@ -68,6 +93,14 @@ extra_css:
   - stylesheets/extra.css
 
 extra:
+  social:
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/12740993
+  tags:
+    Python: py
+    HTML5: html
+    JavaScript: js
+    CSS: css
   analytics:
     provider: google
     property: G-TMSQ1TZLPL
@@ -104,7 +137,26 @@ copyright: >
   <p xmlns:cc="http://creativecommons.org/ns#" >&copy; By Zhichao Cheng is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
 
 markdown_extensions:
+  # Python Markdown Extensions
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.tabbed:
+      alternate_style: true
   - tables
+  # Python Markdown
+  - attr_list
+  - md_in_html
+  - abbr
+  - admonition
   - toc:
       permalink: true
       title: On this page
