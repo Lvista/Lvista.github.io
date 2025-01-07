@@ -70,6 +70,13 @@ plugins:
       enable_creation_date: true
       fallback_to_build_date: true
   - blog:
+      blog_dir: blog
+      blog_toc: true
+      post_date_format: medium
+      post_excerpt: required
+      draft: true
+  - blog:
+      blog_dir: azurLane
       blog_toc: true
       post_date_format: medium
       post_excerpt: required
@@ -80,14 +87,14 @@ plugins:
 nav:
   - Home: index.md
   - About: about.md
+  - AzurLane:
+      - azurLane/index.md
   - Dict: Doc_skill.md
   - Test: test.md
   - Template: template.md
   - Anime: anime_ngnl.md
   - Blog:
       - blog/index.md
-      - Page1: blog/posts/page-1.md
-      # - Page1: blog/posts/page-2.md
 
 extra_css:
   - stylesheets/extra.css
