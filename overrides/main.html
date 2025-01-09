@@ -4,3 +4,47 @@
 <!-- Add announcement here, including arbitrary HTML -->
 公告：正在施工中...
 {% endblock %}
+
+{% block site_nav %}
+<!-- Navigation -->
+{% if nav %}
+{% if page.meta and page.meta.hide %}
+{% set hidden = "hidden" if "navigation" in page.meta.hide %}
+{% endif %}
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" {{ hidden }}>
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            {% include "partials/nav.html" %}
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+<!-- Table of contents -->
+{% if "toc.integrate" not in features %}
+{% if page.meta and page.meta.hide %}
+{% set hidden = "hidden" if "toc" in page.meta.hide %}
+{% endif %}
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" {{ hidden }}>
+    <div class="md-sidebar__scrollwrap">
+        <div class="md-sidebar__inner">
+            {% include "partials/toc.html" %}
+        </div>
+        <div class="card-container">
+            <h3>友情链接</h3>
+            <div class="card">
+                <div class="img-container">
+                    <img src="https://yangzhang.site/assets/images/summation.png"
+                        style="width: 70%; height: 70%; object-fit: contain;">
+                </div>
+                <div class="content">
+                    <h3>yangzhang's Site</h3>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+{% endif %}
+{% endblock %}

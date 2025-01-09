@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # 我是谁？
 
 !!! quote "人生三问"

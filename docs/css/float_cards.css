@@ -1,0 +1,90 @@
+/* .container {
+    background: #0c5cbe9d;
+    margin: 50px 200px 0 200px;
+} */
+
+.card-container {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.card-container .card {
+    display: flex;
+    /* 设置为 flexbox 布局 */
+    align-items: center;
+    /* 垂直方向对齐 */
+    width: 280px;
+    /* 固定宽度，或者根据需要调整 */
+    padding: 10px;
+    /* 添加内边距 */
+    border-radius: 15px;
+    background: #1e2129;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 10px;
+    /* 卡片之间的间距 */
+    /* box-shadow: 0 4px 8px rgb(255, 255, 255); */
+}
+
+.card-container .card .content {
+    padding: 6px;
+    text-align: left;
+}
+
+.card-container .card .content h3 {
+    font-size: 1.8em;
+    z-index: 1;
+}
+
+.card-container .card .content p {
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.card-container .card .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top: 15px;
+    background: #4433ff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    outline: none;
+    border: 2px solid #4433ff;
+}
+
+.card-container .card .content a:hover {
+    background: #fff;
+    color: #4433ff;
+}
+
+.card-container .card .img-container {
+    width: 60px;
+    /* 图片容器宽度 */
+    height: 60px;
+    /* 图片容器高度 */
+    margin-right: 3px;
+    /* 图片和文字之间的间距 */
+    flex-shrink: 0;
+    /* 防止图片缩小 */
+    overflow: hidden;
+    display: flex;
+    /* 使用 flex 布局 */
+    align-items: center;
+    border-radius: 70%;
+    /* 如果需要圆形图片 */
+}
+
+.card-container .card .img-container img {
+    width: 100%;
+    /* 图片适应容器宽度 */
+    height: 100%;
+    /* 图片适应容器高度 */
+    object-fit: cover;
+    /* 确保图片按比例填充 */
+}

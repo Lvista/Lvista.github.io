@@ -65,6 +65,11 @@ theme:
     - content.code.annotate
 
 plugins:
+  - rss:
+      match_path: "blog/posts/.*"
+      date_from_meta:
+        as_creation: date.created
+        as_update: date.updated
   - search
   - git-revision-date-localized:
       enable_creation_date: true
@@ -105,6 +110,13 @@ extra:
   social:
     - icon: fontawesome/brands/bilibili
       link: https://space.bilibili.com/12740993
+    - icon: material/television-play
+      name: Bangumi追番列表
+      link: https://bangumi.tv/user/754307
+    - icon: fontawesome/solid/rss
+      name: RSS
+      link: http://localhost:8000/feed_rss_created.xml
+
   tags:
     Python: py
     HTML5: html
@@ -180,3 +192,4 @@ extra_javascript:
 extra_css:
   - stylesheets/extra.css
   - css/custom.css
+  - css/float_cards.css

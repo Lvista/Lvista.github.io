@@ -12,18 +12,22 @@ tags:
 Just a page for testing
 <!-- more -->
 
-# 图片翻转效果
+# 卡片页面
 
-下面是一个支持图片翻转的 HTML 示例，直接在 Markdown 中嵌入代码。
+<div class="card-container">
+    <div class="card">
+        <div class="content">
+            <h3>冷水坑</h3>
+            <p>《冷水坑》是金特出版的第一部小说集，包含了他自2015年以来创作的四篇小说《冷水坑》《冬民·选章》《暴风雪》和《罪与爱》。</p>
+            <a href="https://book.douban.com/subject/36624404/" target="_blank">点我直达</a>
+        </div>
+    </div>
 
-# 图片翻转效果
-
-<figure markdown="span">
-  ![Image title](./assets/images/logo_noBG_circle.png){ width="300" }
-  <!-- <figcaption>Image caption</figcaption> -->
-</figure>
-
-<div class="flip-container">
-    <img src="../assets/images/logo_noBG_circle.png" alt="Front Image">
-    <img src="../assets/images/logo_noBG_circle.png" alt="Back Image">
+    <div class="card">
+        <div class="content">
+            <h3>辛弃疾新传</h3>
+            <p>他毕生历经浮沉，波澜壮阔的人生经历、旷达豪迈的赤子之心，尽在《辛弃疾新传》的记述之中。</p>
+            <a href="https://book.douban.com/subject/36442202/" target="_blank">点我直达</a>
+        </div>
+    </div>
 </div>
