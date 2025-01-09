@@ -12,43 +12,18 @@ tags:
 Just a page for testing
 <!-- more -->
 
-The HTML specification
-is maintained by the W3C.
+# 图片翻转效果
 
-*[HTML]: Hyper Text Markup Language
-*[W3C]:  World Wide Web Consortium
+下面是一个支持图片翻转的 HTML 示例，直接在 Markdown 中嵌入代码。
 
+# 图片翻转效果
 
+<figure markdown="span">
+  ![Image title](./assets/images/logo_noBG_circle.png){ width="300" }
+  <!-- <figcaption>Image caption</figcaption> -->
+</figure>
 
-``` yaml
-theme:
-  features:
-    - content.code.annotate # (1)!
-```
-
-1.  :man_raising_hand: I'm a code annotation! I can contain `code`, __formatted
-    text__, images, ... basically anything that can be written in Markdown.
-
-
-
-```` markdown title="Code block with highlighted line range"
-``` py hl_lines="3-5"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-````
-
-<div class="result" markdown>
-
-``` py linenums="1" hl_lines="3-5"
-def bubble_sort(items):
-    for i in range(len(items)):
-        for j in range(len(items) - 1 - i):
-            if items[j] > items[j + 1]:
-                items[j], items[j + 1] = items[j + 1], items[j]
-```
-
+<div class="flip-container">
+    <img src="../assets/images/logo_noBG_circle.png" alt="Front Image">
+    <img src="../assets/images/logo_noBG_circle.png" alt="Back Image">
 </div>

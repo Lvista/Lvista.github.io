@@ -1,5 +1,5 @@
 site_name: 黯然's Blog
-site_url: https://lvista.vercel.app/
+site_url: https://lvista.site/
 repo_url: https://github.com/Lvista/Lvista.github.io
 repo_name: Lvista.github.io
 edit_uri: edit/main/docs/
@@ -90,19 +90,16 @@ plugins:
       tags_file: tags.md
 
 nav:
-  - Home: index.md
-  - About: about.md
-  - AzurLane:
+  - 🏠Home: index.md
+  - 😎About: about.md
+  - 🌊AzurLane:
       - azurLane/index.md
-  - Dict: Doc_skill.md
-  - Test: test.md
+  - 📖Dict: Doc_skill.md
+  - 🛠️Test: test.md
   - Template: template.md
-  - Anime: anime_ngnl.md
+  - 🖼️Anime: anime_ngnl.md
   - Blog:
       - blog/index.md
-
-extra_css:
-  - stylesheets/extra.css
 
 extra:
   social:
@@ -179,3 +176,7 @@ markdown_extensions:
 
 extra_javascript:
   - javascripts/feedback.js
+
+extra_css:
+  - stylesheets/extra.css
+  - css/custom.css
