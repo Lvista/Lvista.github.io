@@ -2,9 +2,11 @@
 
 <div class="flip-container">
     <div class="image-container">
-        <img src="../assets/images/logo_noBG_circle.png" alt="Front Image">
+        <!-- docs/assets/images/logo_noBG_circle.png -->
+        <img src="https://s2.loli.net/2025/01/09/ve1piNRt6M5ycDQ.png" alt="Front Image">
         <a href="/template/" >
-            <img src="../assets/images/self_shoot.png" alt="Back Image">
+            <!-- docs/assets/images/self_shoot.png -->
+            <img src="https://s2.loli.net/2025/01/09/wOzTR9Kyfq2jMHo.png" alt="Back Image">
         </a>
     </div>
     <div class="hover-block">
