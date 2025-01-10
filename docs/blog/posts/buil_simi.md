@@ -24,8 +24,8 @@ tags:
 
 ## 准备
 
-- 从我的release/latest中下载最新版
-- 下载包
+- 从我的[release/latest](https://github.com/Lvista/Lvista.github.io/releases/latest)中下载最新版
+- 下载包:
 <!-- termynal -->
 
 ```
@@ -33,3 +33,29 @@ tags:
 > pip install mkdocs-rss-plugin
 > pip install mkdocs-git-revision-date-localized-plugin
 ```
+之后运行以下命令即可预览
+<!-- termynal -->
+```
+> mkdocs server
+```
+!!! tip 
+    `mkdocs server`运行后不会自动中止进程，使用++ctrl+c++即可强行终止进程。
+    进程开始后， 大部分 的网页的修改会同步跟新到网页，不需要重新启动。
+
+*[大部分]: 后面就会懂哪些是大部分了
+## 部署
+
+1. 创建一个Github账号
+2. 按照[GitHub Pages](https://pages.github.com/)创建仓库
+3. 按照[使用GitHub Actions workflow](http://127.0.0.1:8000/blog/2025/01/08/site_build/#github-actions-workflow)
+推送仓库
+4. 按照[国内访问](http://127.0.0.1:8000/blog/2025/01/08/site_build/#_2)解析网页
+
+## 自定义
+
+大部分设置可参考[Customization](https://squidfunk.github.io/mkdocs-material/customization/)
+这里对我加入的进行说明
+
+### 首页头像
+
+:material-file-code:
