@@ -115,7 +115,7 @@ extra:
       link: https://bangumi.tv/user/754307
     - icon: fontawesome/solid/rss
       name: RSS
-      link: http://localhost:8000/feed_rss_created.xml
+      link: https://lvista.site/feed_rss_created.xml
 
   tags:
     Python: py
