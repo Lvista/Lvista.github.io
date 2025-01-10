@@ -58,4 +58,26 @@ tags:
 
 ### 首页头像
 
+:material-file-code:`index.html`
+
+=== "`index.html`"
+    ```html
+    <div class="flip-container">
+        <div class="image-container">
+            <!-- docs/assets/images/logo_noBG_circle.png -->
+            <img src="https://s2.loli.net/2025/01/09/ve1piNRt6M5ycDQ.png" alt="Front Image">
+            <a href="/template/" >
+                <!-- docs/assets/images/self_shoot.png -->
+                <img src="https://s2.loli.net/2025/01/09/wOzTR9Kyfq2jMHo.png" alt="Back Image">
+            </a>
+        </div>
+        <div class="hover-block">
+            点我看看!
+        </div>
+    </div>
+
+    ```
+
 :material-file-code:`overrides/main.html`
+
+

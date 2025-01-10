@@ -169,6 +169,10 @@ copyright: >
 
 markdown_extensions:
   # Python Markdown Extensions
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
   - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
