@@ -69,8 +69,9 @@ tags:
                 categories_pagination_per_page: 10
             - tags
         ```
-    - 运行`mkdocs server`即可在本地浏览效果
-    - [GitHub Pages][GP]快速部署
+    - 运行`mkdocs serve`即可在本地浏览效果
+    - 运行`mkdocs build`创建包含`index.html`的网页文件
+    - [GitHub Pages][GP]快速部署，推送到Github
     - 访问`user.github.io`即可看到结果
     !!! tip "更喜欢我的？"
         如果您更喜欢我的，可以看看[这篇](./buil_simi.md)
@@ -94,9 +95,20 @@ tags:
 
     :material-arrow-right:from [Publishing your site - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
 
-使用 GAW 最大的好处在于将源文件和编译后的文件库分开。并且编译在 GAW 上完成，对本地编辑环境要求降低了很多，可以快速发布文章。
 
-请遵循[Publishing your site - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
+
+!!! note "原理"
+    使用 GAW 最大的好处在于将源文件和编译后的文件库分开。并且编译在 GAW 上完成，对本地编辑环境要求降低了很多，可以快速发布文章。
+
+    原理就是将编译前的文件推送到Github，Github会根据`.github\workflows\ci.yml`运行命令，
+    在这里就是将文件云编译至`gh-pages`分支，然后Github Page会展示`gh-pages`分支的网页仓库，
+    而源文件则在`main`分支中。
+
+1. 根据[Publishing your site - Material for MkDocs](https://squidfunk.github.io/mkdocs-material/publishing-your-site/)
+完成`ci.yml`的创建
+2. 将带有`mkdocs.yml`的源文件库推送至`main`分支
+3. 转Github仓库页面，在`Setting`->`Pages`->`Build and deployment`中，将`Branch`设定为`gh-pages`
+
 
 ??? bug "ERROR - Config value 'plugins': The "git-revision-date-localized" plugin is not installed"
     当使用[git-revision-date-localized](https://squidfunk.github.io/mkdocs-material/setup/adding-a-git-repository/?h=git+date#document-dates)
@@ -136,7 +148,7 @@ tags:
     ```
 
 
-## 在国内访问
+## 国内访问
 
 !!! note
     请确认已在[GitHub Pages][GP]上部署好网站并可以访问。
@@ -147,6 +159,7 @@ tags:
 需要实名注册，审核通过很快，购买了1年的`.site`域名；
 2. 之后带着注册号的域名，比如我的`lvista.site`，找到`云解析DNS`服务，选择`新手快速解析`
 3. 选择将网站域名解析到另外的目标名，输入`username.github.io`，就能开启免费套餐版的云解析DNS服务
+4. 转Github仓库，在`Setting`->`Pages`-> `Chustom domain`中输入域名，保存
 
 *[GAW]: GitHub Actions Workflow
 [GP]: https://pages.github.com/
