@@ -30,5 +30,6 @@ tags:
 
 ```
 > pip install mkdocs-material
-> 
+> pip install mkdocs-rss-plugin
+> pip install mkdocs-git-revision-date-localized-plugin
 ```
