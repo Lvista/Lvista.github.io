@@ -25,5 +25,10 @@ tags:
 ## 准备
 
 - 从我的release/latest中下载最新版
-- 
+- 下载包
+<!-- termynal -->
 
+```
+> pip install mkdocs-material
+> 
+```

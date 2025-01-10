@@ -65,6 +65,10 @@ theme:
     - content.code.annotate
 
 plugins:
+  - termynal:
+      prompt_literal_start:
+        - "$"
+        - ">"
   - rss:
       match_path: "blog/posts/.*"
       date_from_meta:
