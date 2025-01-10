@@ -1,5 +1,5 @@
 ---
-draft: true 
+# draft: true 
 comments: true
 slug: site_build
 title: "自建主页：始"
@@ -40,12 +40,16 @@ tags:
 
 ## Start your first homepage
 
-只需要遵从[Material for MkDocs-getting-started](https://squidfunk.github.io/mkdocs-material/getting-started/#getting-started)
-按照顺序一步步做下去即可搭建完成第一个HP，之后在[GitHub Pages][GP]上部署即可。
+只需要遵从[Getting-started][qs]
+按照顺序一步步做下去即可搭建完成第一个HP，之后在[GitHub Pages][GP]上部署即可。动手完成至[Getting-started][qs]中的[Publishing your site](https://squidfunk.github.io/mkdocs-material/publishing-your-site/#publishing-your-site)
+章节即可完成基本部署。
+
 
 ??? example annotate "快速实践"
 
-    我
+    以下仅为“急急国王”或者需要尽快搭建的同学的参考，对于大多数人，
+    依然建议按照[Getting-started][qs]提供的教程进行.
+
     - `pip install mkdocs-material`
     - 下载官方提供的标准例子
         [Blog][blog-template]
@@ -65,12 +69,17 @@ tags:
                 categories_pagination_per_page: 10
             - tags
         ```
-    - 运行`mkdocs server`即可看到效果
+    - 运行`mkdocs server`即可在本地浏览效果
+    - [GitHub Pages][GP]快速部署
+    - 访问`user.github.io`即可看到结果
+    !!! tip "更喜欢我的？"
+        如果您更喜欢我的，可以看看[这篇](./buil_simi.md)
 
 1.  因为该例子只给[Insiders Edition](https://squidfunk.github.io/mkdocs-material/insiders/)，俗称高级用户使用
 需要去掉部分功能才能运行。
 
 [blog-template]: https://github.com/mkdocs-material/create-blog
+[qs]: https://squidfunk.github.io/mkdocs-material/getting-started/#getting-started
 
 
 ??? note "你可能需要知道的"
@@ -146,4 +155,10 @@ tags:
 
 ## END
 
-到此为止，
+到此为止，你已经成功完成以下功能：
+
+- [x] 构建一个网站
+- [x] 将其部署在服务器上（GitPage托管服务）
+- [x] 中国大陆也能访问
+
+:partying_face:恭喜你，你又进步了！！

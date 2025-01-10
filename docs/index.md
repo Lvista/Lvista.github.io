@@ -40,4 +40,12 @@
 
     [:octicons-arrow-right-24: 施工中](#)
 
+-   :material-tools:{ .lg .middle } __给我也整一个__
+
+    ---
+
+    如果您认同我的博客设计，可以从这里快速部署
+
+    [:octicons-arrow-right-24: 开整](./blog/posts/buil_simi.md)
+
 </div>
