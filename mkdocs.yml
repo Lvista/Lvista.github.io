@@ -1,3 +1,9 @@
+# Dependency of package:
+# > pip install mkdocs-material
+# > pip install mkdocs-rss-plugin
+# > pip install mkdocs-git-revision-date-localized-plugin
+# > pip install termynal
+
 site_name: 黯然's Blog
 site_url: https://lvista.site/
 repo_url: https://github.com/Lvista/Lvista.github.io
@@ -163,6 +169,7 @@ copyright: >
 
 markdown_extensions:
   # Python Markdown Extensions
+  - pymdownx.keys
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.emoji:
