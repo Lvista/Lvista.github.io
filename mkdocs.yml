@@ -1,4 +1,4 @@
-site_name: 黯然's Blog
+site_name: 黯然's Blog(v1.1)
 site_url: https://lvista.site/
 repo_url: https://github.com/Lvista/Lvista.github.io
 repo_name: Lvista.github.io
@@ -77,12 +77,6 @@ plugins:
         - azurLane/category/*
   - blog:
       blog_dir: blog
-      blog_toc: true
-      post_date_format: medium
-      post_excerpt: required
-      draft: true
-  - blog:
-      blog_dir: azurLane
       blog_toc: true
       post_date_format: medium
       post_excerpt: required
