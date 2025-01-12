@@ -76,6 +76,51 @@ comments: true
     我觉得，先不说活得像个伟人吧，应该做一个想着他人的人。既然人性不可根治，
     那至少心中念叨着**“为他人而活”**，这样在老人倒地时，会主动去扶吧。
 
-## 关于我的头像
+!!! note "关于我的头像"
 
-来自[网络](https://w7.pngwing.com/pngs/507/601/png-transparent-no-game-no-life-anime-chibi-manga-fan-art-anime-fictional-character-cartoon-magenta.png)，作者未知，是我的本命作《[ノーゲーム・ノーライフ](https://ja.wikipedia.org/wiki/ノーゲーム・ノーライフ)》（中文：游戏人生）中的两位主角。关于我对这个作品的讨论，可移步[详情](../anime/ngnl.md)。
+    === "正面"
+        算是我网络上的常用头像了，来自[网络](https://w7.pngwing.com/pngs/507/601/png-transparent-no-game-no-life-anime-chibi-manga-fan-art-anime-fictional-character-cartoon-magenta.png)，作者未知，是我的本命作《[ノーゲーム・ノーライフ](https://ja.wikipedia.org/wiki/ノーゲーム・ノーライフ)》（中文：游戏人生）中的两位主角。关于我对这个作品的讨论，可移步[详情](../anime/ngnl.md)。
+    === "反面"
+        日出之时到达富士山顶，在火山口拍的照，在bilibili投稿了[视频](【大阪富士行】 https://www.bilibili.com/video/BV1DepseKE1m/?share_source=copy_web&vd_source=1d45bc16721329d087b0211e0e3e9de5)
+
+## 关键词
+
+=== "<font size="4">折腾</font>"
+
+    爱折腾，有时候会因为一个小问题而特意去折腾，
+    比如最近在用latex写毕业论文，因为嫌windows平台编译慢，
+    特意用老笔记本装了一个Ubuntu，意外的好用。
+
+    创建这个网站时，想做一个翻转头像的效果，但因为不懂html，
+    查阅各种资料（包括GPT），最终弄出来了。
+
+=== "<font size="4">Code</font>"
+
+    - 最熟悉：C(嵌入式), C++(嵌入式), C#(Unity)
+    - 还行：Python, Java
+    - 能读懂：SQL, HTML,
+
+    !!! note 
+        我很喜欢编程。我的母亲是一位计算机老师，受到她的影响，
+        出生（甚至是出生前）就接触计算机，初中接触第一门语言，C语言。
+        但我并不是科班出身(1)，学的比较杂。
+        {.annotate}
+
+        1. 高考报考时，母亲劝戒我别学计算机，而我物理是最好的，所以选了[应用物理学][ap_phs].
+        虽然也是落榜导致滑到了这个学校这个专业就是了。但我依然喜欢编程，
+        硕士考进南京理工大学的仪器系，搞电路，半年后又走双学位项目来日本搞人机交互，
+        又搞代码。应该说我是啥都懂啥都会吧😂
+        [ap_phs]: https://zh.wikipedia.org/wiki/%E5%BA%94%E7%94%A8%E7%89%A9%E7%90%86%E5%AD%A6
+
+=== "<font size="4">C语言</font>"
+
+    我最早接触的是C语言，后面嵌入式玩的多，也成了我最熟悉的语言。
+    由于是[OPP编程](https://en.wikipedia.org/wiki/Procedural_programming)，
+    我到现在也还保留以过程为主线的编程习惯。
+
+    这也导致我最初无法理解[OOP编程](https://en.wikipedia.org/wiki/Object-oriented_programming)，
+    抽象程度过高导致的[黑盒效应](https://en.wikipedia.org/wiki/Black_box)，
+    各种依赖嵌套，让我很恐慌。
+
+    但毕竟是时代的发展，作为程序员怎么能不跟紧时代的脚步呢
+    
