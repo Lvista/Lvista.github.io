@@ -78,4 +78,4 @@ comments: true
 
 ## 关于我的头像
 
-来自[网络](https://w7.pngwing.com/pngs/507/601/png-transparent-no-game-no-life-anime-chibi-manga-fan-art-anime-fictional-character-cartoon-magenta.png)，作者未知，是我的本命作《[ノーゲーム・ノーライフ](https://ja.wikipedia.org/wiki/ノーゲーム・ノーライフ)》（中文：游戏人生）中的两位主角。关于我对这个作品的讨论，可移步[详情](./anime_ngnl.md)。
+来自[网络](https://w7.pngwing.com/pngs/507/601/png-transparent-no-game-no-life-anime-chibi-manga-fan-art-anime-fictional-character-cartoon-magenta.png)，作者未知，是我的本命作《[ノーゲーム・ノーライフ](https://ja.wikipedia.org/wiki/ノーゲーム・ノーライフ)》（中文：游戏人生）中的两位主角。关于我对这个作品的讨论，可移步[详情](../anime/ngnl.md)。

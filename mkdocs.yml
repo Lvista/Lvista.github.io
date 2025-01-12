@@ -108,6 +108,8 @@ nav:
   - 😎About:
       - ./about/about.md
       - ./about/world.md
+  - 💻Code:
+      - ./code/index.md
   - 🎮Game:
       - ./game/index.md
       - 碧蓝航线:
