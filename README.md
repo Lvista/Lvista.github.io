@@ -10,4 +10,5 @@
 > pip install mkdocs-rss-plugin
 > pip install mkdocs-git-revision-date-localized-plugin
 > pip install termynal
+> pip install mkdocs-glightbox
 ```

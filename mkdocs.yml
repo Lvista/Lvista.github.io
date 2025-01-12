@@ -3,8 +3,9 @@
 # > pip install mkdocs-rss-plugin
 # > pip install mkdocs-git-revision-date-localized-plugin
 # > pip install termynal
+# > pip install mkdocs-glightbox
 
-site_name: 黯然's Blog
+site_name: 黯然's Site
 site_url: https://lvista.site/
 repo_url: https://github.com/Lvista/Lvista.github.io
 repo_name: Lvista.github.io
@@ -52,17 +53,17 @@ theme:
         name: Switch to light mode
 
   features:
-    - navigation.instant
-    - navigation.instant.progress
+    # - navigation.instant # 目前与termynal冲突，不使用
+    # - navigation.instant.progress
     - navigation.tracking
     - navigation.top
     - navigation.footer
-    # - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.indexes
     - toc.follow
-    - search.share
+    # - search.share # 不明所以的功能
     - header.autohide
     - announce.dismiss
     - content.action.edit
@@ -95,25 +96,24 @@ plugins:
       post_date_format: medium
       post_excerpt: required
       draft: true
-  - blog:
-      blog_dir: azurLane
-      blog_toc: true
-      post_date_format: medium
-      post_excerpt: required
-      draft: true
   - tags:
       tags_file: tags.md
 
 nav:
-  - 🏠Home: index.md
-  - 😎About: about.md
-  - 🌊AzurLane:
-      - azurLane/index.md
-  - 📖Dict: Doc_skill.md
-  - 🛠️Test: test.md
-  - Template: template.md
+  - 🏠Home:
+      - index.md
+      - 🛠️Test: test.md
+      - 📄Template: template.md
+      - 📖Dict: Doc_skill.md
+  - 😎About:
+      - ./about/about.md
+      - ./about/world.md
+  - 🎮Game:
+      - ./game/index.md
+      - 碧蓝航线:
+          - ./game/azurLane/index.md
   - 🖼️Anime: anime_ngnl.md
-  - Blog:
+  - 🎨Blog:
       - blog/index.md
 
 extra:
@@ -191,6 +191,7 @@ markdown_extensions:
       alternate_style: true
   - tables
   # Python Markdown
+  - pymdownx.blocks.caption
   - attr_list
   - md_in_html
   - abbr

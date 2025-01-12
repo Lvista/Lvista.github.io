@@ -1,15 +1,15 @@
 ---
-draft: true 
+# draft: true 
 comments: true
-slug: Template_page
-title: "Template"
-date: 2025-01-07
+slug: world
+title: "足迹"
+date: 2025-01-12
 categories: 
-    - Test
+    - 足迹
 tags:
-    - Template
+    - 足迹
 ---
-# Template
+# 足迹
 
 这是一个标准模板
 

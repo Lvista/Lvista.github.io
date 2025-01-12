@@ -29,4 +29,5 @@ jobs:
       - run: pip install mkdocs-git-revision-date-localized-plugin
       - run: pip install mkdocs-rss-plugin
       - run: pip install termynal
+      - run: pip install mkdocs-glightbox
       - run: mkdocs gh-deploy --force
