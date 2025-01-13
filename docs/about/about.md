@@ -28,7 +28,8 @@ comments: true
 
     - **程智超**：程来自吾父，名来自智慧过人之意。简单直白的名字。
 
-    > 根据[公安部便民服务](https://ywtb.mps.gov.cn/)提供数据，截止2024/12/24，共有216名男性，16名女性与我同名。
+    !!! note
+        根据[公安部便民服务](https://ywtb.mps.gov.cn/)提供数据，截止2024/12/24，共有216名男性，16名女性与我同名。
 
 ===  "<font size="5">我来自哪里？</font>"
 
@@ -76,12 +77,14 @@ comments: true
     我觉得，先不说活得像个伟人吧，应该做一个想着他人的人。既然人性不可根治，
     那至少心中念叨着**“为他人而活”**，这样在老人倒地时，会主动去扶吧。
 
+---
+
 !!! note "关于我的头像"
 
     === "正面"
         算是我网络上的常用头像了，来自[网络](https://w7.pngwing.com/pngs/507/601/png-transparent-no-game-no-life-anime-chibi-manga-fan-art-anime-fictional-character-cartoon-magenta.png)，作者未知，是我的本命作《[ノーゲーム・ノーライフ](https://ja.wikipedia.org/wiki/ノーゲーム・ノーライフ)》（中文：游戏人生）中的两位主角。关于我对这个作品的讨论，可移步[详情](../anime/ngnl.md)。
     === "反面"
-        日出之时到达富士山顶，在火山口拍的照，在bilibili投稿了[视频](【大阪富士行】 https://www.bilibili.com/video/BV1DepseKE1m/?share_source=copy_web&vd_source=1d45bc16721329d087b0211e0e3e9de5)
+        日出之时到达富士山顶，在火山口拍的照，在bilibili投稿了[视频](https://www.bilibili.com/video/BV1DepseKE1m/?share_source=copy_web&vd_source=1d45bc16721329d087b0211e0e3e9de5)
 
 ## 关键词
 
@@ -124,3 +127,38 @@ comments: true
 
     但毕竟是时代的发展，作为程序员怎么能不跟紧时代的脚步呢
     
+=== "<font size="4">DIY</font>"
+
+    DIY，即Do It Yourself，自己动手，丰衣足食。
+    - 编程：查一查就学一学就知道了
+    - 做饭：看一看，学着做一做就知道了
+    - 其他：看一看，学着做一做就知道了
+    我是实践派，思考理论花费我更多时间。
+
+=== "<font size="4">INFJ</font>"
+
+    ![Image title](./fig/infj.svg){ align="right", width="200" }
+    
+    我是一个[INFJ](https://www.16personalities.com/ch/infj-%E4%BA%BA%E6%A0%BC)，
+    喜欢思考，喜欢分析，喜欢总结。身边的INFJ还挺多，比如右边友情链接中的张杨同学
+
+=== "<font size="4">南京信息工程大学</font>"
+
+    本科母校，应用物理专业，4年过的非常“节能”（就像[冰菓里的折木奉太郎](https://zh.moegirl.org.cn/zh-hans/%E6%8A%98%E6%9C%A8%E5%A5%89%E5%A4%AA%E9%83%8E)），没挂过科，成绩也是中等偏上，
+    但也没做什么特别，没什么成果。感觉最受益的是高数，光学，物理学，电路，嵌入式
+
+    学校虽然是双非，但我依然感激老师和同学，还有饭堂。
+    特别是让我结识了几位挚友。
+
+=== "<font size="4">南京理工大学</font>"
+
+    靠着努力考上南理工的研究生，微系统与测控技术(1)方向，因为没人当费力不讨好的班长，
+    我就成为了班长。但[上了半年就来日本了][go_jp]，结识了最好的室友杨茁同学，
+    在我身在他乡的时候帮了我很多忙。
+    {.annotate}
+
+    1. 属于机械院的仪器系，搞电路和测控仪器的，与本科的应用物理相比，
+    有点跨学科了。
+
+    故事还未结束...
+    [go_jp]: about.md "发生了什么？"
