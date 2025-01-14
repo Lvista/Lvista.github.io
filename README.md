@@ -3,7 +3,7 @@
 - Access [here](https://lvista.site/)
 - See also [AIboy996.github.io](https://github.com/AIboy996/AIboy996.GitHub.io)
 
-## Dependency
+## Requirements
 
 ```bash
 > pip install mkdocs-material
