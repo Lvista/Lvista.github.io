@@ -53,8 +53,8 @@ theme:
         name: Switch to light mode
 
   features:
-    # - navigation.instant # 目前与termynal冲突，不使用
-    # - navigation.instant.progress
+    - navigation.instant # 目前与termynal冲突，不使用
+    - navigation.instant.progress
     - navigation.tracking
     - navigation.top
     - navigation.footer
