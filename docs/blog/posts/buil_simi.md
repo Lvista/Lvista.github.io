@@ -58,4 +58,116 @@ tags:
 
 ### 首页头像
 
-:material-file-code:
+可修改`docs/index.md`中的图片和文字
+
+=== ":material-file-code:`docs/index.md`"
+
+    ``` html
+    <div class="flip-container">
+    <div class="image-container">
+        <!-- docs/assets/images/logo_noBG_circle.png -->
+        <img src="https://s2.loli.net/2025/01/09/ve1piNRt6M5ycDQ.png" alt="Front Image">
+        <a href="/template/" >
+            <!-- docs/assets/images/self_shoot.png -->
+            <img src="https://s2.loli.net/2025/01/09/wOzTR9Kyfq2jMHo.png" alt="Back Image">
+        </a>
+    </div>
+    <div class="hover-block">
+        点我看看!
+    </div>
+    </div>
+    ```
+
+=== ":material-file-code:`docs/css/custom.css`"
+
+    ``` css
+    .flip-container {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 10px auto;
+        display: flex;
+        align-items: flex-start;
+        /* 对齐顶部 */
+        justify-content: flex-end;
+        /* 将文字放置右上角 */
+    }
+
+    /*more...*/
+
+    ```
+
+### 友情链接
+
+可修改`overrides/main.html`中的图片和链接
+
+=== ":material-file-code:`overrides/main.html`"
+
+    ``` html hl_lines="27-42" 
+    {% block site_nav %}
+    <!-- Navigation -->
+    {% if nav %}
+    {% if page.meta and page.meta.hide %}
+    {% set hidden = "hidden" if "navigation" in page.meta.hide %}
+    {% endif %}
+    <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" {{ hidden }}>
+        <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+                {% include "partials/nav.html" %}
+            </div>
+        </div>
+    </div>
+
+    {% endif %}
+
+    <!-- Table of contents -->
+    {% if "toc.integrate" not in features %}
+    {% if page.meta and page.meta.hide %}
+    {% set hidden = "hidden" if "toc" in page.meta.hide %}
+    {% endif %}
+    <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" {{ hidden }}>
+        <div class="md-sidebar__scrollwrap">
+            <div class="md-sidebar__inner">
+                {% include "partials/toc.html" %}
+            </div>
+            <div class="card-container">
+                <h3>友情链接</h3>
+                <div class="card">
+                    <div class="img-container">
+                        <a href="https://yangzhang.site/" target="_blank">
+                            <img src="https://yangzhang.site/assets/images/summation.png"
+                                style="width: 70%; height: 70%; object-fit: contain;">
+                        </a>
+                    </div>
+                    <div class="content">
+                        <a href="https://yangzhang.site/" target="_blank">
+                            <h3>yangzhang's Site</h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    {% endif %}
+    {% endblock %}
+    ```
+=== ":material-file-code:`css/float_cards.css`"
+
+    ``` css
+    .card-container {
+    margin: 50px 0 0 0;
+    display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    text-align: center;
+    }
+    /*...see more */
+
+    ```
+=== ":material-file-code:`mkdocs.yml`"
+    ``` html
+    extra_css:
+        - css/float_cards.css
+    ```
