@@ -106,14 +106,15 @@ nav:
       - 📄Template: template.md
       - 📖Dict: Doc_skill.md
   - 😎About:
-      - ./about/about.md
-      - ./about/world.md
+      - about.md
+      - world.md
   - 💻Code: ./code/index.md
   - 🎮Game:
       - ./game/index.md
       - 碧蓝航线:
           - ./game/azurLane/index.md
   - 🖼️Anime: ./anime/index.md
+  - 🎵Music: ./music/index.md
   - 🎨Blog:
       - blog/index.md
 

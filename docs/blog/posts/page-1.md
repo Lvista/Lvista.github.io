@@ -6,8 +6,6 @@ title: "基于Python的视频处理"
 date: 2025-01-06
 categories: 
     - Python
-    - application
-    - media process
 tags:
     - Python
     - Vedio

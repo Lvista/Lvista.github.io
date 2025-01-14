@@ -1,12 +1,11 @@
 ---
-draft: true 
+# draft: true 
 comments: true
 slug: build_sim
 title: "Build A Simular Site"
 date: 2025-01-10
 categories: 
-    - HP
-    - Blog
+    - 建站
 tags:
     - 建站
     - HTML
@@ -58,7 +57,6 @@ tags:
 
 ### 首页头像
 
-<<<<<<< HEAD
 可修改`docs/index.md`中的图片和文字
 
 === ":material-file-code:`docs/index.md`"

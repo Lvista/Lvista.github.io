@@ -30,7 +30,7 @@
 
     我是个...人？
 
-    [:octicons-arrow-right-24: 了解一下](./about/about.md)
+    [:octicons-arrow-right-24: 了解一下](about.md)
 
 -   :material-foot-print:{ .lg .middle } __我的足迹__
 

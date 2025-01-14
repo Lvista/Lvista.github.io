@@ -5,8 +5,7 @@ slug: site_build
 title: "自建主页：始"
 date: 2025-01-08
 categories: 
-    - HP
-    - Blog
+    - 建站
 tags:
     - 建站
     - HTML
