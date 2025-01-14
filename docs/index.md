@@ -46,6 +46,6 @@
 
     如果您认同我的博客设计，可以从这里快速部署
 
-    [:octicons-arrow-right-24: 开整](./blog/posts/buil_simi.md)
+    [:octicons-arrow-right-24: 开整](./blog/posts/build_simi.md)
 
 </div>
