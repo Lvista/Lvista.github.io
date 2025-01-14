@@ -4,7 +4,7 @@
     <div class="image-container">
         <!-- docs/assets/images/logo_noBG_circle.png -->
         <img src="https://s2.loli.net/2025/01/09/ve1piNRt6M5ycDQ.png" alt="Front Image">
-        <a href="/template/" >
+        <a href="about/about/#__tabbed_2_1" >
             <!-- docs/assets/images/self_shoot.png -->
             <img src="https://s2.loli.net/2025/01/09/wOzTR9Kyfq2jMHo.png" alt="Back Image">
         </a>
@@ -30,7 +30,7 @@
 
     我是个...人？
 
-    [:octicons-arrow-right-24: 了解一下](./about.md)
+    [:octicons-arrow-right-24: 了解一下](./about/about.md)
 
 -   :material-foot-print:{ .lg .middle } __我的足迹__
 

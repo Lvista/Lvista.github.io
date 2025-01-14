@@ -26,7 +26,7 @@ tags:
 
 - 从我的[release/latest](https://github.com/Lvista/Lvista.github.io/releases/latest)中下载最新版
 - 下载包:
-<!-- termynal -->
+<!-- termynal: { title: powershell } -->
 
 ```
 > pip install mkdocs-material
@@ -34,7 +34,7 @@ tags:
 > pip install mkdocs-git-revision-date-localized-plugin
 ```
 之后运行以下命令即可预览
-<!-- termynal -->
+<!-- termynal: { title: powershell } -->
 ```
 > mkdocs server
 ```
@@ -58,6 +58,7 @@ tags:
 
 ### 首页头像
 
+<<<<<<< HEAD
 可修改`docs/index.md`中的图片和文字
 
 === ":material-file-code:`docs/index.md`"
