@@ -1,4 +1,4 @@
-# Lvista's Blog
+# Lvista's Site
 
 - Access [here](https://lvista.site/)
 - See also [AIboy996.github.io](https://github.com/AIboy996/AIboy996.GitHub.io)
