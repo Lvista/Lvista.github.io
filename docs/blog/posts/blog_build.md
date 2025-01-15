@@ -73,7 +73,7 @@ tags:
     - [GitHub Pages][GP]快速部署，推送到Github
     - 访问`user.github.io`即可看到结果
     !!! tip "更喜欢我的？"
-        如果您更喜欢我的，可以看看[这篇](./buil_simi.md)
+        如果您更喜欢我的，可以看看[这篇](./build_simi.md)
 
 1.  因为该例子只给[Insiders Edition](https://squidfunk.github.io/mkdocs-material/insiders/)，俗称高级用户使用
 需要去掉部分功能才能运行。
