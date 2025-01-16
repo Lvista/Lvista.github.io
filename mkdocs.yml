@@ -53,8 +53,8 @@ theme:
         name: Switch to light mode
 
   features:
-    - navigation.instant # 目前与termynal冲突，不使用
-    - navigation.instant.progress
+    # - navigation.instant # 目前与termynal冲突，不使用
+    # - navigation.instant.progress
     - navigation.tracking
     - navigation.top
     - navigation.footer
@@ -85,11 +85,11 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       fallback_to_build_date: true
-      exclude:
-        - blog/archive/*
-        - blog/category/*
-        - azurLane/archive/*
-        - azurLane/category/*
+      # exclude:
+      #   - blog/archive/*
+      #   - blog/category/*
+      #   - azurLane/archive/*
+      #   - azurLane/category/*
   - blog:
       blog_dir: blog
       blog_toc: true
