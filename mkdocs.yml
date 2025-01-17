@@ -108,7 +108,9 @@ nav:
   - 😎About:
       - about.md
       - world.md
-  - 💻Code: ./code/index.md
+  - 💻Code:
+      - ./code/index.md
+      - ./code/nndl.md
   - 🎮Game:
       - ./game/index.md
       - 碧蓝航线:
@@ -171,6 +173,11 @@ copyright: >
 
 markdown_extensions:
   # Python Markdown Extensions
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.critic
   - pymdownx.caret
   - pymdownx.mark
