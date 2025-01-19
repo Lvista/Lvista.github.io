@@ -2,114 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://lvista.site/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/Doc_skill/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/about/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/template/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/test/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/world/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/anime/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/anime/ngnl/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/blog/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/blog/2025/01/08/site_build/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/blog/2025/01/10/build_sim/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/blog/2025/01/14/jp_home/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://lvista.site/blog/2025/01/19/np_bc/</loc>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/blog/2025/01/06/Vedio_processing_by_python/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/blog/2025/01/16/pavlovian/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/code/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://lvista.site/code/algorithm/</loc>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/code/nndl/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/game/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/game/azurLane/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/game/azurLane/Fight_tg/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/game/azurLane/page_1/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/game/azurLane/page_2/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/music/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/blog/archive/2025/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://lvista.site/blog/category/%E6%9D%82%E8%B0%88/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://lvista.site/blog/category/%E6%97%A5%E6%9C%AC/</loc>
-         <lastmod>2025-01-16</lastmod>
-    </url>
-    <url>
-         <loc>https://lvista.site/blog/category/%E5%BB%BA%E7%AB%99/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/blog/category/python/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://lvista.site/blog/category/%E6%9D%82%E8%B0%88/</loc>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://lvista.site/blog/category/%E6%97%A5%E6%9C%AC/</loc>
+         <lastmod>2025-01-19</lastmod>
+    </url>
+    <url>
+         <loc>https://lvista.site/blog/category/%E5%BB%BA%E7%AB%99/</loc>
+         <lastmod>2025-01-19</lastmod>
     </url>
     <url>
          <loc>https://lvista.site/tags/</loc>
-         <lastmod>2025-01-16</lastmod>
+         <lastmod>2025-01-19</lastmod>
     </url>
 </urlset>
