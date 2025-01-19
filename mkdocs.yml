@@ -70,6 +70,7 @@ theme:
     - content.action.view
     - content.code.copy
     - content.code.annotate
+    - content.tabs.link
 
 plugins:
   - termynal:
@@ -173,6 +174,8 @@ copyright: >
 
 markdown_extensions:
   # Python Markdown Extensions
+  - pymdownx.arithmatex:
+      generic: true
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -212,6 +215,8 @@ markdown_extensions:
       permalink_title: Anchor link to this section for reference
 
 extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/feedback.js
 
 extra_css:
