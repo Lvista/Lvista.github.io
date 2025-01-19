@@ -15,5 +15,3 @@ tags:
 ## 随机梯度下降法
 
 ![随机梯度下降法](https://files.catbox.moe/9xyobz.png)
-
-=== ""
