@@ -140,3 +140,17 @@ def bubble_sort(items):
     ```
 
     </div>
+
+## 获取网页ICON的api
+
+[:simple-github: favicone](https://github.com/fransallen/favicone)
+``` html
+<!-- example -->
+https://favicone.com/google.com
+```
+![](https://0x3.com/icon?host=0x3.com){width=20} https://0x3.com/
+
+``` html
+<!-- example -->
+https://0x3.com/icon?host=www.bilibili.com
+```
