@@ -14,7 +14,7 @@ tags:
 
 一些关于[《神经网络与深度学习》](https://nndl.github.io/)的笔记
 
-- [算法的实现练手](./algorithm.md)
+- [优化算法](./opt_alg.md)
 
 ## 对神经网络与深度学习的理解
 
