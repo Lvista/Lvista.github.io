@@ -32,7 +32,7 @@ Learning when not to solve a problem is one of the hardest things I've learnt.
 ## Nerd Sniped
 
 !!! note "See more"
-	https://minimaxir.com/2025/01/write-better-code/
+	[https://minimaxir.com/2025/01/write-better-code/](https://minimaxir.com/2025/01/write-better-code/)
 
 	这篇文章讨论了是否可以通过反复要求大型语言模型（LLM）“写更好的代码”来提高代码质量。作者Max Woolf通过实验探讨了这种方法，并使用了Anthropic的Claude 3.5 Sonnet模型进行测试。文章详细记录了实验过程和结果，包括代码优化的过程和性能提升的数据。
 
@@ -42,7 +42,9 @@ Learning when not to solve a problem is one of the hardest things I've learnt.
 极客对普通说，书呆子狙击（Nerd Snaping）很有意思，于是展示了这一行为：
 他举起了放在旁边的牌子向那个正在过马路的物理学家展示，牌子上写了一个电路电阻计算问题。
 物理学家因为这个问题而陷入沉思，呆站在马路中央，而并没有注意到一辆飞驰的货车正向他冲来。
+!!! note "问题的解答"
+	[https://www.mathpages.com/home/kmath668/kmath668.htm](https://www.mathpages.com/home/kmath668/kmath668.htm)
 
 这个词和理工生的巴普洛夫条件反射很类似，这简直就是我。
 
-我也看到了另外一个，这是一个puzzle，叫做蓝眼问题：https://xkcd.com/solution.html
+我也看到了另外一个，这是一个puzzle，叫做[蓝眼问题](https://xkcd.com/solution.html)
