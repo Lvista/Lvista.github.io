@@ -44,3 +44,5 @@ Learning when not to solve a problem is one of the hardest things I've learnt.
 物理学家因为这个问题而陷入沉思，呆站在马路中央，而并没有注意到一辆飞驰的货车正向他冲来。
 
 这个词和理工生的巴普洛夫条件反射很类似，这简直就是我。
+
+我也看到了另外一个，这是一个puzzle，叫做蓝眼问题：https://xkcd.com/solution.html
