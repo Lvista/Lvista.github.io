@@ -43,11 +43,17 @@ tags:
 [前往搜索emoji :octicons-search-16:][tab_1]{ .md-button }
 
 [tab_1]: https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+
 ```
 
 [前往搜索emoji :octicons-search-16:][tab_1]{ .md-button }
 
 [tab_1]: https://squidfunk.github.io/mkdocs-material/reference/icons-emojis/#search
+
+或者下面两个网站：
+
+- [fontawesome](https://fontawesome.com/)
+- [Bootstrap Icons](https://icons.getbootstrap.com/)
 
 ## 注释(Annotations)
 

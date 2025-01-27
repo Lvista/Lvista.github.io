@@ -223,3 +223,4 @@ extra_css:
   - stylesheets/extra.css
   - css/custom.css
   - css/float_cards.css
+  - https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css

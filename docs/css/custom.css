@@ -1,3 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100..900&family=ZCOOL+KuaiLe&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap');
+
+body h2 {
+    font-size: 1.8rem !important;
+    /* 修改标题的大小 */
+    /* color: #1b22fd; */
+    /* 修改标题颜色 */
+    text-align: left;
+    /* font-weight: bold !important; */
+    /* 加粗标题 */
+    font-family: "ZCOOL KuaiLe", serif;
+}
+
+/* 为所有 h2 添加标记 */
+.md-typeset h2::before {
+    content: "\F285";
+    /* 添加的标记，可以是文字、符号或图标 */
+    font-family: "bootstrap-icons" !important;
+    /* 必须指定字体为 bootstrap-icons */
+    /* 标记颜色 */
+    font-size: 1.5rem;
+    /* 标记大小 */
+    margin-right: 0.5rem;
+    /* 与标题之间的间距 */
+    display: inline-block;
+    /* 确保标记与标题对齐 */
+}
+
 .flip-container {
     position: relative;
     width: 300px;
@@ -108,8 +137,6 @@
 }
 
 /* 示例：为标题或段落内容居中 */
-h1.center-text,
-h2.center-text,
 p.center-text {
     text-align: center;
 }
