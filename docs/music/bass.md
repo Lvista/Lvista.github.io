@@ -47,4 +47,21 @@ tags:
     可以发现非常明显的区别。
     <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=377451668&bvid=BV1yo4y1U7ET&cid=393237378&p=1&muted=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="500" height="200" allowfullscreen="true"></iframe>
 
+-   <figure  markdown="span" class="hover-zoom">
+        ![Deep Sleep Sheep](https://i.scdn.co/image/ab67616d0000b273c0b0aa3ec6dd81e8950a9ed5){ width=250 height=250 }  
+    </figure>
+
+    **《Deep Sleep Sheep》**  
+    Sound Produce,Lyrics, Composition, Arrangement：ササノマリイ  
+    Mixing：ササノマリイ
+    Vocal ：HACHI  
+    Movie : 金子開発  
+
+    ---  
+    最近(2025/1/30)很喜欢这种CityWalk风的日系流行曲，
+    这种低音部分很丰富，高音部分则由女声补充的方式真的
+    很耐听。
+
+    <iframe src="//player.bilibili.com/player.html?isOutside=true&aid=113250033209134&bvid=BV1sP1UYeEvx&cid=26143557507&p=1&muted=1" scrolling="no" border="0" frameborder="no" framespacing="0" width="500" height="200" allowfullscreen="true"></iframe>
+
 </dev>
