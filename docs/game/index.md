@@ -1,3 +1,6 @@
+---
+comments: true
+---
 # Game
 
 === ":material-gamepad-variant:我在玩"
@@ -21,6 +24,9 @@
     - **红警**：以前很喜欢去邻居家玩红警，虽然没玩懂就是了，经常下回来玩。最近玩了[日冕模组](https://space.bilibili.com/400315239)
     > :material-star::material-star::material-star::material-star-half-full::material-star-outline:
     画面对当时的我真的时不小的震撼，各种新奇的点子非常有意思。至少我对它的评价是很高的
+    - **街霸6**：我还是很喜欢动作游戏的，从各种视频开始，到最近买下来，尝试玩，还是很上瘾的
+    > :material-star::material-star::material-star::material-star::material-star-outline:
+    游戏本身质量绝对顶尖，特别是画面，我本人非常喜欢。
 
 === "玩过"
 

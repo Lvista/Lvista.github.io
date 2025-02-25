@@ -109,11 +109,11 @@ nav:
   - 😎About:
       - about.md
       - world.md
-  - 💻Code:
-      - ./code/index.md
-      - ./code/nndl.md
-      - ./code/python.md
-      - ./code/ethereum.md
+  - 💻Wiki:
+      - ./wiki/index.md
+      - ./wiki/nndl.md
+      - ./wiki/python.md
+      - ./wiki/ethereum.md
   - 🎮Game:
       - ./game/index.md
       - 碧蓝航线:
