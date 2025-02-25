@@ -112,6 +112,8 @@ nav:
   - 💻Code:
       - ./code/index.md
       - ./code/nndl.md
+      - ./code/python.md
+      - ./code/ethereum.md
   - 🎮Game:
       - ./game/index.md
       - 碧蓝航线:
