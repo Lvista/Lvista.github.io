@@ -197,6 +197,3 @@ comments: true
     算是我网络上的常用头像了，来自[网络](https://w7.pngwing.com/pngs/507/601/png-transparent-no-game-no-life-anime-chibi-manga-fan-art-anime-fictional-character-cartoon-magenta.png)，作者未知，是我的本命作《[ノーゲーム・ノーライフ](https://ja.wikipedia.org/wiki/ノーゲーム・ノーライフ)》（中文：游戏人生）中的两位主角。关于我对这个作品的讨论，可移步[详情](anime/ngnl.md)。
 === "反面"
     日出之时到达富士山顶，在火山口拍的照，在bilibili投稿了[视频](https://www.bilibili.com/video/BV1DepseKE1m/?share_source=copy_web&vd_source=1d45bc16721329d087b0211e0e3e9de5)
-
-
-

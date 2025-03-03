@@ -1,9 +1,9 @@
 # Dependency of package:
-# > pip install mkdocs-material
-# > pip install mkdocs-rss-plugin
-# > pip install mkdocs-git-revision-date-localized-plugin
-# > pip install termynal
-# > pip install mkdocs-glightbox
+#  mkdocs-material
+#  mkdocs-rss-plugin
+#  mkdocs-git-revision-date-localized-plugin
+#  termynal
+#  mkdocs-glightbox
 
 site_name: 黯然's Site
 site_url: https://lvista.site/
@@ -73,6 +73,7 @@ theme:
     - content.tabs.link
 
 plugins:
+  - glightbox
   - termynal:
       prompt_literal_start:
         - "$"

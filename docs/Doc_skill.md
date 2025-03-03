@@ -60,19 +60,19 @@ tags:
 See more (1)
 { .annotate }
 
-1.  [Annotations :material-plus-circle:][tab_2]{ .md-button }
+1. [Annotations :material-plus-circle:][tab_2]{ .md-button }
 
     [tab_2]: https://squidfunk.github.io/mkdocs-material/reference/annotations/#annotations
 
 代码中的Annotations:
+
 ``` yaml
 theme:
   features:
     - content.code.annotate # (1)!
 ```
 
-1.  使用这个注释方法：`# (1)!`
-
+1. 使用这个注释方法：`# (1)!`
 
 ## 代码块(Code blocks)
 
@@ -87,7 +87,9 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 ````
+
 ### 加行号
+
 ```` yaml linenums="1"
 ``` py linenums="1"
 def bubble_sort(items):
@@ -97,6 +99,7 @@ def bubble_sort(items):
                 items[j], items[j + 1] = items[j + 1], items[j]
 ```
 ````
+
 ### 行高亮
 
 === "Lines"
@@ -150,13 +153,32 @@ def bubble_sort(items):
 ## 获取网页ICON的api
 
 [:simple-github: favicone](https://github.com/fransallen/favicone)
+
 ``` html
 <!-- example -->
 https://favicone.com/google.com
 ```
-![](https://0x3.com/icon?host=0x3.com){width=20} https://0x3.com/
+
+![](https://0x3.com/icon?host=0x3.com){width=20} <https://0x3.com/>
 
 ``` html
 <!-- example -->
 https://0x3.com/icon?host=www.bilibili.com
 ```
+
+## 图床问题
+
+一些可以用的临时图床
+
+- [指引](https://github.com/yaunfang/MagicBox/blob/master/%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A%E8%B5%84%E6%BA%90.md)
+- <https://catbox.moe/>
+- <https://sm.ms/>
+- <https://imglink.org/lvista>
+- <https://imglink.org/businiao/albums>
+
+长期图床：
+
+- [自己搭建](https://github.com/icret/EasyImages2.0)
+- [去中心化图床](https://cdn.ipfsscan.io/)
+
+[图片防盗链最终解决方案](https://iui.su/2854/)

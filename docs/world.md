@@ -1,18 +1,8 @@
----
-# draft: true 
-comments: true
-slug: world
-title: "足迹"
-date: 2025-01-12
-categories: 
-    - 足迹
-tags:
-    - 足迹
----
 # 足迹
 
-这是一个标准模板
+<iframe src="https://www.google.com/maps/d/embed?mid=16FU145XpxoFgL3WvdnfW0CcwrgfxrMY&ehbc=2E312F" width="640" height="480"></iframe>
 
-this is a stander template
+## 日本
 
-<!-- more -->
+- [富士山]()
+- [北九州 皿倉山](./world/posts/sarakura.md)
