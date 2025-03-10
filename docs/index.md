@@ -3,10 +3,10 @@
 <div class="flip-container">
     <div class="image-container">
         <!-- docs/assets/images/logo_noBG_circle.png -->
-        <img src="https://s2.loli.net/2025/01/09/ve1piNRt6M5ycDQ.png" alt="Front Image">
+        <img src="https://s2.loli.net/2025/01/09/ve1piNRt6M5ycDQ.png" alt="Front Image" class="skip-lightbox">
         <a href="about/#_2" >
             <!-- docs/assets/images/self_shoot.png -->
-            <img src="https://s2.loli.net/2025/01/09/wOzTR9Kyfq2jMHo.png" alt="Back Image">
+            <img src="https://s2.loli.net/2025/01/09/wOzTR9Kyfq2jMHo.png" alt="Back Image" class="skip-lightbox">
         </a>
     </div>
     <div class="hover-block">

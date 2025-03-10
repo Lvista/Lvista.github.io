@@ -73,7 +73,9 @@ theme:
     - content.tabs.link
 
 plugins:
-  - glightbox
+  - glightbox:
+      skip_classes:
+      - skip-lightbox
   - termynal:
       prompt_literal_start:
         - "$"
@@ -177,6 +179,7 @@ copyright: >
 
 markdown_extensions:
   # Python Markdown Extensions
+  - attr_list
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.superfences:
