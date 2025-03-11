@@ -119,7 +119,7 @@ $$
 $$
 \begin{align*}
 \pi \cdot P = \pi \\
-\sum_{i=0}^5 \pi _i = 1
+1^T \cdot \pi = 1
 \end{align*}
 $$
 
@@ -151,7 +151,47 @@ print("稳态分布 L:", steady_state)
 
 最后得到稳态分布 L:(0.39834289, 0.31867431, 0.19120459, 0.07648184, 0.01529637)
 
-取$\pi_0$计算，得到$1\cdot (1-p)+p\cdot 2 = 1.273208$
+!!! failure "知乎中这样的计算是不对的！"
+    取$\pi_0$计算，得到$1\cdot (1-p)+p\cdot 2 = 1.273208$
 
-!!! question
-    这里想不通为什么取$\pi_0$
+!!! success "正确的期望的计算"
+    来自[yangzhang同学](https://yangzhang.site/SomeMath/prob/crit/)给出了该问题的数学期望的完整解答，再次感受到我本人的在这方面知识的不足。  
+    首先，将其分为两个空间：概率空间$x(t)$和输出空间y(t)，这里暴伤为20:
+
+    $$
+    X=\{0.2,0.4,0.6,0.8,1.0\},Y=\{1,2\}
+    $$
+
+    自此状态应该是离散的，并不受前置状态影响的，每个时点只有两个状态：
+
+    - 发生暴击，伤害为2
+    - 没发生暴击，伤害为1
+
+    此时稳态伤害期望应为(from [yangzhang's](https://yangzhang.site/SomeMath/prob/crit/#_6))：
+    
+    \begin{aligned}
+    &\mathbb{E}(y_\infty)\\\\
+    = &\mathbb{E}\left(\mathbb{E}(y_\infty\mid x_\infty)\right)\\\\
+    = &\sum_{i=0}^4\mathbb{E}(y_\infty\mid x_\infty=X[i])\cdot \mathbb{P}(x_\infty = X[i])\\\\
+    = &\sum_{i=0}^4(2X[i]+1(1-X[i]))\cdot \pi[i]\\\\
+    = &\left(2\cdot\begin{bmatrix}.2&.4&.6&.8&1\end{bmatrix}+1\cdot\begin{bmatrix}.8&.6&.4&.2.&0\end{bmatrix}\right) \cdot \pi\\\\
+    = &\begin{bmatrix}
+    1.2&1.4&1.6&1.8&2
+    \end{bmatrix}\begin{bmatrix}
+    0.39834289\\\\
+    0.31867431\\\\
+    0.19120459\\\\
+    0.07648184\\\\
+    0.01529637\\\\
+    \end{bmatrix}\\\\
+    = &1.3983429
+    \end{aligned}
+
+## 后话
+
+再次感谢yangzhang同学对该问题的解答。从这个问题也引申出两个问题：
+
+- 上面的问题的解释表达式是什么
+- 在计算机上如何实现真正的随机
+
+第一个问题其实意义不大，第二个问题现在也有人在研究，我打算在后面探讨一下第二个问题
