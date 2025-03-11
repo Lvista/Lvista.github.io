@@ -1557,6 +1557,15 @@
   
 </li>
         
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      后话
+    </span>
+  </a>
+  
+</li>
+        
     </ul>
     
 </nav>
@@ -1633,7 +1642,7 @@
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 20a8 8 0 0 0 8-8 8 8 0 0 0-8-8 8 8 0 0 0-8 8 8 8 0 0 0 8 8m0-18a10 10 0 0 1 10 10 10 10 0 0 1-10 10C6.47 22 2 17.5 2 12A10 10 0 0 1 12 2m.5 5v5.25l4.5 2.67-.75 1.23L11 13V7z"/></svg>
                           <span class="md-ellipsis">
                             
-                              需要 2 分钟阅读时间
+                              需要 3 分钟阅读时间
                             
                           </span>
                         </div>
@@ -1841,7 +1850,7 @@ y = (3000,7000)\cdot
 <div class="arithmatex">\[
 \begin{align*}
 \pi \cdot P = \pi \\
-\sum_{i=0}^5 \pi _i = 1
+1^T \cdot \pi = 1
 \end{align*}
 \]</div>
 <p>这一次我们使用Python的<code>numpy</code>来计算：</p>
@@ -1868,11 +1877,48 @@ y = (3000,7000)\cdot
 </span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;稳态分布 L:&quot;</span><span class="p">,</span> <span class="n">steady_state</span><span class="p">)</span>
 </span></code></pre></div>
 <p>最后得到稳态分布 L:(0.39834289, 0.31867431, 0.19120459, 0.07648184, 0.01529637)</p>
+<div class="admonition failure">
+<p class="admonition-title">知乎中这样的计算是不对的！</p>
 <p>取<span class="arithmatex">\(\pi_0\)</span>计算，得到<span class="arithmatex">\(1\cdot (1-p)+p\cdot 2 = 1.273208\)</span></p>
-<div class="admonition question">
-<p class="admonition-title">Question</p>
-<p>这里想不通为什么取<span class="arithmatex">\(\pi_0\)</span></p>
 </div>
+<div class="admonition success">
+<p class="admonition-title">正确的期望的计算</p>
+<p>来自<a href="https://yangzhang.site/SomeMath/prob/crit/">yangzhang同学</a>给出了该问题的数学期望的完整解答，再次感受到我本人的在这方面知识的不足。<br />
+首先，将其分为两个空间：概率空间<span class="arithmatex">\(x(t)\)</span>和输出空间y(t)，这里暴伤为20:</p>
+<div class="arithmatex">\[
+X=\{0.2,0.4,0.6,0.8,1.0\},Y=\{1,2\}
+\]</div>
+<p>自此状态应该是离散的，并不受前置状态影响的，每个时点只有两个状态：</p>
+<ul>
+<li>发生暴击，伤害为2</li>
+<li>没发生暴击，伤害为1</li>
+</ul>
+<p>此时稳态伤害期望应为(from <a href="https://yangzhang.site/SomeMath/prob/crit/#_6">yangzhang's</a>)：</p>
+<div class="arithmatex">\[\begin{aligned}
+&amp;\mathbb{E}(y_\infty)\\\\
+= &amp;\mathbb{E}\left(\mathbb{E}(y_\infty\mid x_\infty)\right)\\\\
+= &amp;\sum_{i=0}^4\mathbb{E}(y_\infty\mid x_\infty=X[i])\cdot \mathbb{P}(x_\infty = X[i])\\\\
+= &amp;\sum_{i=0}^4(2X[i]+1(1-X[i]))\cdot \pi[i]\\\\
+= &amp;\left(2\cdot\begin{bmatrix}.2&amp;.4&amp;.6&amp;.8&amp;1\end{bmatrix}+1\cdot\begin{bmatrix}.8&amp;.6&amp;.4&amp;.2.&amp;0\end{bmatrix}\right) \cdot \pi\\\\
+= &amp;\begin{bmatrix}
+1.2&amp;1.4&amp;1.6&amp;1.8&amp;2
+\end{bmatrix}\begin{bmatrix}
+0.39834289\\\\
+0.31867431\\\\
+0.19120459\\\\
+0.07648184\\\\
+0.01529637\\\\
+\end{bmatrix}\\\\
+= &amp;1.3983429
+\end{aligned}\]</div>
+</div>
+<h2 id="_6">后话<a class="headerlink" href="#_6" title="Anchor link to this section for reference">&para;</a></h2>
+<p>再次感谢yangzhang同学对该问题的解答。从这个问题也引申出两个问题：</p>
+<ul>
+<li>上面的问题的解释表达式是什么</li>
+<li>在计算机上如何实现真正的随机</li>
+</ul>
+<p>第一个问题其实意义不大，第二个问题现在也有人在研究，我打算在后面探讨一下第二个问题</p>
 
 
 
@@ -1895,7 +1941,7 @@ y = (3000,7000)\cdot
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年2月27日 10:52:16">2025年2月27日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年3月11日 16:19:00">2025年3月11日</span>
   </span>
 
     
