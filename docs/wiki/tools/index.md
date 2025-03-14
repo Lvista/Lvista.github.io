@@ -1,12 +1,17 @@
 ---
 comments: true
-title: "工具和软件"
+title: "工具、软件和资源"
 date: 2025-03-14
 categories: 
     - app
 ---
 
-# 工具和软件
+# 工具、软件和资源
+
+## 字体
+
+- [辰宇落雁體](https://github.com/Chenyu-otf/chenyuluoyan_thin.git):手写体
+- [JetBrains Maple Mono](https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono.git):一只基于 Github Workflows (Bash) 的 JetBrains Mono + Maple Mono 合成字体
 
 ## 内网穿透
 
