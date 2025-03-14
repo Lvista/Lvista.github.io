@@ -1754,7 +1754,7 @@
 </ul>
 <h2 id="_2">对神经网络与深度学习的理解<a class="headerlink" href="#_2" title="Anchor link to this section for reference">&para;</a></h2>
 <p>书中对整本书的结构如下，当不知道在学什么的时候，可以看一下这个图
-<a class="glightbox" href="fig/Snipaste_2025-01-17_16-04-57.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="结构" src="fig/Snipaste_2025-01-17_16-04-57.png" /></a></p>
+<a class="glightbox" href="../fig/Snipaste_2025-01-17_16-04-57.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img alt="结构" src="../fig/Snipaste_2025-01-17_16-04-57.png" /></a></p>
 <ul>
 <li><strong>神经网络</strong>只是一个模型，就像函数一样，放进一个输入，给出一个输出，
 只不过这个模型里包含很多首尾相接的函数，构成像神经一样的网络结构。</li>
@@ -1772,19 +1772,19 @@
 <ul>
 <li>模型：即“判断”或者“试错”的过程，延申出另外一个课题，模式识别。</li>
 <li>学习准则：“试错”时与正确答案之间的差距</li>
-<li>优化算法：如何对模型进行优化
+<li>优化算法：如何对模型进行优化</li>
+</ul>
 <pre class="mermaid"><code>graph LR
   A[模型] --&gt; B[学习准则];
   B --&gt; C[优化算法];
   C--&gt;A;</code></pre>
-我想了一个简单的例子，判断(0.5,3)在哪条斜率为1的线上
+<p>我想了一个简单的例子，判断(0.5,3)在哪条斜率为1的线上</p>
 <pre class="mermaid"><code>graph LR
     direction LR
   C["二维坐标点(0.5,3)"]--&gt;A[模型：y=x+5]; 
   A--&gt; B["输出：5.5"];
-</code></pre></li>
-</ul>
-<p><pre class="mermaid"><code>graph LR
+</code></pre>
+<pre class="mermaid"><code>graph LR
   D["二维坐标点(0.5,3)"]--&gt;E[模型：y=x+5]; 
   E--&gt; F["输出：5.5"];
   F--&gt; G[学习准则：作差,5.5-3=2.5];
@@ -1796,7 +1796,7 @@
   B--&gt; C["输出：3"];
   C--&gt; G[学习准则：作差,3-3=0];
 </code></pre>
-上面三个步骤展示三个基本要素的基本关系。但这里只用了一次学习就获得了最佳结果，
+<p>上面三个步骤展示三个基本要素的基本关系。但这里只用了一次学习就获得了最佳结果，
 实际问题往往是需要多次学习来逼近真实模型的。</p>
 <h2 id="_4">具体问题具体分析<a class="headerlink" href="#_4" title="Anchor link to this section for reference">&para;</a></h2>
 
@@ -1821,7 +1821,7 @@
     <span class="md-icon" title="最后更新">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年3月14日 08:22:13">2025年3月14日</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="2025年3月14日 09:58:37">2025年3月14日</span>
   </span>
 
     
@@ -2124,6 +2124,8 @@
     
     
       <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
+      
+        <script src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7466613001454843"></script>
       
         <script src="../../javascripts/mathjax.js"></script>
       
