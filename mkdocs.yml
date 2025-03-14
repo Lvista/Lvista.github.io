@@ -4,7 +4,6 @@
 #  mkdocs-git-revision-date-localized-plugin
 #  termynal
 #  mkdocs-glightbox
-
 site_name: 黯然's Site
 site_url: https://lvista.site/
 repo_url: https://github.com/Lvista/Lvista.github.io
@@ -55,10 +54,11 @@ theme:
   features:
     # - navigation.instant # 目前与termynal冲突，不使用
     # - navigation.instant.progress
+    - navigation.collapse  # 默认折叠所有目录项
     - navigation.tracking
     - navigation.top
     - navigation.footer
-    - navigation.sections
+    # - navigation.sections
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.indexes
@@ -72,7 +72,37 @@ theme:
     - content.code.annotate
     - content.tabs.link
 
+nav: 
+  - 🏠Home:
+      - index.md
+      - 🛠️Test: test.md
+      - 📄Template: template.md
+      - 📖Dict: Doc_skill.md
+  - 😎About:
+      - about.md
+      - world.md
+  - 💻Wiki:
+      - ./wiki/index.md
+      - 工具:
+        - ./wiki/tools/index.md
+      - nndl: 
+        - ./wiki/nndl/index.md
+        - ./wiki/nndl/opt_alg.md
+        - ./wiki/nndl/python_algebra.md
+      - ./wiki/python.md
+      - ./wiki/ethereum.md
+  - 🎮Game:
+      - ./game/index.md
+      - 碧蓝航线:
+          - ./game/azurLane/index.md
+  - 🖼️Anime: ./anime/index.md
+  - 🎵Music: ./music/index.md
+  - 🎨Blog:
+      - blog/index.md
+
 plugins:
+  - git-revision-date-localized:
+      strict: false
   - glightbox:
       skip_classes:
       - skip-lightbox
@@ -102,29 +132,6 @@ plugins:
       draft: true
   - tags:
       tags_file: tags.md
-
-nav:
-  - 🏠Home:
-      - index.md
-      - 🛠️Test: test.md
-      - 📄Template: template.md
-      - 📖Dict: Doc_skill.md
-  - 😎About:
-      - about.md
-      - world.md
-  - 💻Wiki:
-      - ./wiki/index.md
-      - ./wiki/nndl.md
-      - ./wiki/python.md
-      - ./wiki/ethereum.md
-  - 🎮Game:
-      - ./game/index.md
-      - 碧蓝航线:
-          - ./game/azurLane/index.md
-  - 🖼️Anime: ./anime/index.md
-  - 🎵Music: ./music/index.md
-  - 🎨Blog:
-      - blog/index.md
 
 extra:
   social:
