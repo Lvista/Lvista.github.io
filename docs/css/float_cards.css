@@ -26,8 +26,8 @@
     padding: 10px;
     /* 添加内边距 */
     border-radius: 50px;
-    background: #1e2129;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: var(rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    border: 2px solid var(--md-primary-fg-color--light, rgb(255, 255, 255));
     margin: 5px;
     /* 卡片之间的间距 */
     /* box-shadow: 0 4px 8px rgb(255, 255, 255); */
@@ -52,13 +52,13 @@
 .card-container .card .content a {
     position: relative;
     display: inline-block;
-    color: #fff;
+    color: var(#fff, --md-primary-fg-color--light);
     outline: none;
 }
 
 .card-container .card .content a:hover {
     /* background: #fff; */
-    color: #3355ff;
+    color: var(#3355ff, --md-primary-fg-color--light);
 }
 
 .card-container .card .img-container {

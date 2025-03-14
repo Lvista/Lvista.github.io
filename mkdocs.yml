@@ -228,9 +228,11 @@ markdown_extensions:
       permalink_title: Anchor link to this section for reference
 
 extra_javascript:
+  - https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7466613001454843
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/feedback.js
+
 
 extra_css:
   - stylesheets/extra.css
