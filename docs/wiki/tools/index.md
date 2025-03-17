@@ -8,9 +8,18 @@ categories:
 
 # 工具、软件和资源
 
+## 嵌入式和单片机
+
+- [JCOM](http://jooiee.com/cms/ruanjian/115.html): 一款非常棒的串口实时曲线调试助手
+
+## 媒体处理
+
+- [waifu2x-caffe](<https://github.com/lltcggie/waifu2x-caffe>)：无损（并非无损）放大图片
+
 ## 字体
 
 - [辰宇落雁體](https://github.com/Chenyu-otf/chenyuluoyan_thin.git):手写体
+
 - [JetBrains Maple Mono](https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono.git):一只基于 Github Workflows (Bash) 的 JetBrains Mono + Maple Mono 合成字体
 
 ## 内网穿透

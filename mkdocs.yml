@@ -54,7 +54,7 @@ theme:
   features:
     # - navigation.instant # 目前与termynal冲突，不使用
     # - navigation.instant.progress
-    - navigation.collapse  # 默认折叠所有目录项
+    - navigation.collapse # 默认折叠所有目录项
     - navigation.tracking
     - navigation.top
     - navigation.footer
@@ -72,11 +72,11 @@ theme:
     - content.code.annotate
     - content.tabs.link
 
-nav: 
+nav:
   - 🏠Home:
       - index.md
-      - 🛠️Test: test.md
-      - 📄Template: template.md
+      # - 🛠️Test: test.md
+      # - 📄Template: template.md
       - 📖Dict: Doc_skill.md
   - 😎About:
       - about.md
@@ -84,11 +84,11 @@ nav:
   - 💻Wiki:
       - ./wiki/index.md
       - 工具:
-        - ./wiki/tools/index.md
-      - nndl: 
-        - ./wiki/nndl/index.md
-        - ./wiki/nndl/opt_alg.md
-        - ./wiki/nndl/python_algebra.md
+          - ./wiki/tools/index.md
+      - nndl:
+          - ./wiki/nndl/index.md
+          - ./wiki/nndl/opt_alg.md
+          - ./wiki/nndl/python_algebra.md
       - ./wiki/python.md
       - ./wiki/ethereum.md
   - 🎮Game:
@@ -105,7 +105,7 @@ plugins:
       strict: false
   - glightbox:
       skip_classes:
-      - skip-lightbox
+        - skip-lightbox
   - termynal:
       prompt_literal_start:
         - "$"
@@ -232,7 +232,6 @@ extra_javascript:
   - javascripts/mathjax.js
   - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
   - javascripts/feedback.js
-
 
 extra_css:
   - stylesheets/extra.css
