@@ -182,3 +182,18 @@ https://0x3.com/icon?host=www.bilibili.com
 - [去中心化图床](https://cdn.ipfsscan.io/)
 
 [图片防盗链最终解决方案](https://iui.su/2854/)
+
+## Github名片
+
+[![nwtgck/gh-card - GitHub](https://gh-card.dev/repos/nwtgck/gh-card.svg)](https://github.com/nwtgck/gh-card)
+
+[去试试](https://gh-card.dev/){ .md-button target="_blank"}
+
+## 终端
+
+<!-- termynal: { title: bash } -->
+
+```bash
+$ echo hellow world
+hellow world
+```
