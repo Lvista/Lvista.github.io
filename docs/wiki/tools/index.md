@@ -22,6 +22,8 @@ categories:
 
 - [JetBrains Maple Mono](https://github.com/SpaceTimee/Fusion-JetBrainsMapleMono.git):一只基于 Github Workflows (Bash) 的 JetBrains Mono + Maple Mono 合成字体
 
+- [Maple Mono](<https://github.com/subframe7536/maple-font>): Maple Mono 是一款开源等宽字体，专注于优化您的编码体验。
+
 ## 内网穿透
 
 ### 游客访问
