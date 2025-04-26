@@ -93,6 +93,9 @@ nav:
       - ./wiki/ethereum.md
       - Linux:
           - ./wiki/linux/vim.md
+      - 通信:
+          - ./wiki/comm_tech/UWB.md
+      
   - 🎮Game:
       - ./game/index.md
       - 碧蓝航线:
